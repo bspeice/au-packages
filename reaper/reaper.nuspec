@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>reaper</id>
+    <title>Reaper</title>
+    <version>5.34</version>
+    <authors>Cockos Incorporated</authors>
+    <owners>Olivier Martin</owners>
+    <summary>Reaper Digital Audio Workstation</summary>
+    <description>REAPER is digital audio workstation software: a complete multitrack audio and MIDI recording, editing, processing, mixing, and mastering environment.</description>
+    <projectUrl>http://www.reaper.fm/</projectUrl>
+    <tags>reaper audio midi multitrack recording mixing mastering</tags>
+    <licenseUrl>http://reaper.fm/purchase.php</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- TODO: update the icon, or copy it to my repository -->
+    <iconUrl>https://cdn.rawgit.com/anchnk/nugetpackages/master/icons/reaper.png</iconUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
