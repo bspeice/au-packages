@@ -3,7 +3,7 @@
   <metadata>
     <id>reaper</id>
     <title>Reaper</title>
-    <version>5.35</version>
+    <version>5.40</version>
     <authors>Cockos Incorporated</authors>
     <owners>Olivier Martin</owners>
     <summary>Reaper Digital Audio Workstation</summary>
@@ -13,7 +13,7 @@
     <licenseUrl>http://reaper.fm/purchase.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- TODO: update the icon, or copy it to my repository -->
-    <iconUrl>https://cdn.rawgit.com/anchnk/nugetpackages/master/icons/reaper.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/bspeice/au-packages/2b47bf43/reaper/icons/reaper.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
