@@ -18,12 +18,14 @@ function global:au_GetLatest {
 
     $re  = "reaper.*-install.exe"
     $installer = $download_page.links | ? href -match $re | select -First 1 -expand href
-    $version_compact = $installer -split 'reaper|-' | select -Last 1 -Skip 1
+    $version_compact = $installer -split 'reaper|c-' | select -Last 1 -Skip 1
+    Write-Host $version_compact
     $version_minor = $version_compact -split '5',2 -join '.'
+
     $version = "5" + $version_minor
 
-    $url32 = 'http://reaper.fm/files/5.x/reaper' + $version_compact + '-install.exe'
-    $url64 = 'http://reaper.fm/files/5.x/reaper' + $version_compact + '_x64-install.exe'
+    $url32 = 'http://reaper.fm/files/5.x/reaper' + $version_compact + 'c-install.exe'
+    $url64 = 'http://reaper.fm/files/5.x/reaper' + $version_compact + 'c_x64-install.exe'
 
     return @{ URL64 = $url64; URL32 = $url32; Version = $version }
 }
