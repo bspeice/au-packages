@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>capnproto</id>
+    <title>Cap'n Proto</title>
+    <version>0.6.1</version>
+    <authors>Sandstorm.io</authors>
+    <owners>Kenton Varda</owners>
+    <summary>Cap'n Proto compiler</summary>
+    <description>Cap’n Proto is an insanely fast data interchange format and capability-based RPC system.</description>
+    <projectUrl>https://capnproto.org/</projectUrl>
+    <tags>capnproto rpc protobuf flatbuffers sbe</tags>
+    <licenseUrl>https://github.com/capnproto/capnproto/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- TODO: update the icon, or copy it to my repository -->
+    <iconUrl>https://capnproto.org/images/logo.png</iconUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
