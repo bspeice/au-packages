@@ -3,11 +3,12 @@
   <metadata>
     <id>reaper</id>
     <title>Reaper</title>
-    <version>5.61</version>
+    <version>5.76</version>
     <authors>Cockos Incorporated</authors>
     <owners>Olivier Martin</owners>
     <summary>Reaper Digital Audio Workstation</summary>
-    <description>REAPER is digital audio workstation software: a complete multitrack audio and MIDI recording, editing, processing, mixing, and mastering environment.</description>
+    <description><![CDATA[REAPER is a complete digital audio production application for Windows and OS X, offering a full multitrack audio and MIDI recording, editing, processing, mixing and mastering toolset.
+]]></description>
     <projectUrl>http://www.reaper.fm/</projectUrl>
     <tags>reaper audio midi multitrack recording mixing mastering</tags>
     <licenseUrl>http://reaper.fm/purchase.php</licenseUrl>
