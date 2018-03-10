@@ -8,7 +8,7 @@ SetTitleMatchMode, 2
 
 winTitleInstall = cmd.exe
 ; winTitleInstall = Command Prompt
-WinWait, %winTitleInstall%, , 120
+WinWait, %winTitleInstall%, , 600
 WinActivate %winTitleInstall%
 Sleep, 1000
 ControlSend, , {Enter}, %winTitleInstall%
