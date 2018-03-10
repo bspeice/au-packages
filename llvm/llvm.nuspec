@@ -20,6 +20,10 @@ This package installs all Windows tools, which includes but is not limited to:
 MSVC tools will be installed if the MSVC toolchain is detected during installation.
 ]]></description>
     <projectUrl>http://llvm.org/</projectUrl>
+    <docsUrl>http://releases.llvm.org/6.0.0/docs/index.html</docsUrl>
+    <mailingListUrl>https://lists.llvm.org/mailman/listinfo/llvm-dev</mailingListUrl>
+    <bugTrackerUrl>https://bugs.llvm.org/</bugTrackerUrl>
+    <projectSourceUrl>https://git.llvm.org/git/llvm</projectSourceUrl>
     <tags>llvm c++ c lldb clang clangd</tags>
     <licenseUrl>http://llvm.org/docs/DeveloperPolicy.html#license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
