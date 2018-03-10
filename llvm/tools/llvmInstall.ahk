@@ -7,7 +7,6 @@ SetTitleMatchMode, 2
 ; SetControlDelay 
 
 winTitleInstall = cmd.exe
-; winTitleInstall = Command Prompt
 WinWait, %winTitleInstall%, , 600
 WinActivate %winTitleInstall%
 Sleep, 200

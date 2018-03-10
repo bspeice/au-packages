@@ -28,6 +28,7 @@ $packageArgs = @{
 
 
 # Thanks to https://github.com/kendaleiv/chocolatey-veracrypt
+# and https://github.com/improbable-io/clang-choco/pull/8
 # for helping with the AutoHotKey automation.
 # This is needed for users without MSVC installed,
 # LLVM pops open a window saying that MSVC isn't detected.
