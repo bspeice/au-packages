@@ -7,6 +7,7 @@ This package installs all Windows tools, which includes but is not limited to:
 - clangd
 - clang++
 - clang-format
+- lld
 - lldb
 - llvm-objdump
 
