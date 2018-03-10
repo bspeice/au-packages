@@ -8,6 +8,7 @@
     <owners>Kenton Varda</owners>
     <summary>Cap'n Proto compiler</summary>
     <description>Cap’n Proto is an insanely fast data interchange format and capability-based RPC system.</description>
+    <packageSourceUrl>https://github.com/bspeice/au-packages</packageSourceUrl>
     <projectUrl>https://capnproto.org/</projectUrl>
     <tags>capnproto rpc protobuf flatbuffers sbe</tags>
     <licenseUrl>https://github.com/capnproto/capnproto/blob/master/LICENSE</licenseUrl>

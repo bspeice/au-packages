@@ -9,6 +9,7 @@
     <summary>Reaper Digital Audio Workstation</summary>
     <description><![CDATA[REAPER is a complete digital audio production application for Windows and OS X, offering a full multitrack audio and MIDI recording, editing, processing, mixing and mastering toolset.
 ]]></description>
+    <packageSourceUrl>https://github.com/bspeice/au-packages</packageSourceUrl>
     <projectUrl>http://www.reaper.fm/</projectUrl>
     <tags>reaper audio midi multitrack recording mixing mastering</tags>
     <licenseUrl>http://reaper.fm/purchase.php</licenseUrl>
