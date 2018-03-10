@@ -10,5 +10,5 @@ winTitleInstall = cmd.exe
 ; winTitleInstall = Command Prompt
 WinWait, %winTitleInstall%, , 600
 WinActivate %winTitleInstall%
-Sleep, 1000
+Sleep, 200
 ControlSend, , {Enter}, %winTitleInstall%
