@@ -26,5 +26,20 @@ $packageArgs = @{
   validExitCodes= @(0)
 }
 
+
+# Thanks to https://github.com/kendaleiv/chocolatey-veracrypt
+# for helping with the AutoHotKey automation.
+# This is needed for users without MSVC installed,
+# LLVM pops open a window saying that MSVC isn't detected.
+$ahkExe = 'AutoHotKey'
+$ahkFile = Join-Path $toolsDir "llvmInstall.ahk"
+$ahkProc = Start-Process -FilePath $ahkExe `
+                         -ArgumentList $ahkFile `
+                         -PassThru
+ 
+$ahkId = $ahkProc.Id
+Write-Debug "$ahkExe start time:`t$($ahkProc.StartTime.ToShortTimeString())"
+Write-Debug "Process ID:`t$ahkId"
+
 Install-ChocolateyPackage @packageArgs
 Install-ChocolateyPath "$($env:SystemDrive)\Program Files\LLVM\bin" "Machine" # Machine will assert administrative rights
