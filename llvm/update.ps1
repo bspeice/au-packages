@@ -23,6 +23,8 @@ function global:au_GetLatest {
     $url32 = 'https://releases.llvm.org/' + $version + '/LLVM-' + $version + '-win32.exe'
     $url64 = 'https://releases.llvm.org/' + $version + '/LLVM-' + $version + '-win64.exe'
 
+    $version = "$version.2"
+
     Write-Host $version
     Write-Host $url32
     Write-Host $url64
