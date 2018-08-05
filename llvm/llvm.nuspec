@@ -32,7 +32,7 @@ MSVC tools will be installed if the MSVC toolchain is detected during installati
     <tags>llvm c++ c lldb clang clangd lld</tags>
     <licenseUrl>http://llvm.org/docs/DeveloperPolicy.html#license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://llvm.org/img/DragonSmall.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/bspeice/au-packages/e114896b/llvm/DragonSmall.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
