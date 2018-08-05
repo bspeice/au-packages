@@ -25,14 +25,13 @@ MSVC tools will be installed if the MSVC toolchain is detected during installati
     </dependencies>
     <packageSourceUrl>https://github.com/bspeice/au-packages</packageSourceUrl>
     <projectUrl>http://llvm.org/</projectUrl>
-    <docsUrl>http://releases.llvm.org/6.0.0/docs/index.html</docsUrl>
+    <docsUrl>https://llvm.org/docs/</docsUrl>
     <mailingListUrl>https://lists.llvm.org/mailman/listinfo/llvm-dev</mailingListUrl>
     <bugTrackerUrl>https://bugs.llvm.org/</bugTrackerUrl>
     <projectSourceUrl>https://git.llvm.org/git/llvm</projectSourceUrl>
     <tags>llvm c++ c lldb clang clangd lld</tags>
     <licenseUrl>http://llvm.org/docs/DeveloperPolicy.html#license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!-- TODO: update the icon, or copy it to my repository -->
     <iconUrl>http://llvm.org/img/DragonSmall.png</iconUrl>
   </metadata>
   <files>
