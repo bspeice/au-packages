@@ -10,5 +10,3 @@ This package installs all Windows tools, which includes but is not limited to:
 - lld
 - lldb
 - llvm-objdump
-
-MSVC tools will be installed if the MSVC toolchain is detected during installation.
