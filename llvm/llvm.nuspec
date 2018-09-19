@@ -3,7 +3,7 @@
   <metadata>
     <id>llvm</id>
     <title>LLVM</title>
-    <version>6.0.1.20180721</version>
+    <version>7.0.0</version>
     <authors>LLVM team</authors>
     <owners>Bradlee Speice</owners>
     <summary>LLVM Compiler Infrastructure</summary>
@@ -17,12 +17,7 @@ This package installs all Windows tools, which includes but is not limited to:
 - lld
 - lldb
 - llvm-objdump
-
-MSVC tools will be installed if the MSVC toolchain is detected during installation.
 ]]></description>
-    <dependencies>
-      <dependency id="autohotkey" />
-    </dependencies>
     <packageSourceUrl>https://github.com/bspeice/au-packages</packageSourceUrl>
     <projectUrl>http://llvm.org/</projectUrl>
     <docsUrl>https://llvm.org/docs/</docsUrl>

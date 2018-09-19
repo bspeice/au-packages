@@ -3,10 +3,10 @@ $ErrorActionPreference = 'Stop';
 
 $packageName= 'llvm'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32      = 'https://releases.llvm.org/6.0.1/LLVM-6.0.1-win32.exe'
-$checksum32 = '534dbe5931f48979e793ef4ab245eb47fbc9c40e6a5b9f25fbc599c787834d35'
-$url64      = 'https://releases.llvm.org/6.0.1/LLVM-6.0.1-win64.exe'
-$checksum64 = '780276221635aa08120187ffc2c72ff7873dee37f5609455ee7bba6fcdd91d79'
+$url32      = 'https://releases.llvm.org/7.0.0/LLVM-7.0.0-win32.exe'
+$checksum32 = 'c3aa07231ab84f7ab4bb47b3cda4393c8203f3254a04b602cdfdc116c4c058f5'
+$url64      = 'https://releases.llvm.org/7.0.0/LLVM-7.0.0-win64.exe'
+$checksum64 = '74b197a3959b0408adf0824be01db8dddfa2f9a967f4085af3fad900ed5fdbf6'
 
 $packageArgs = @{
   packageName   = $packageName
@@ -26,21 +26,6 @@ $packageArgs = @{
   validExitCodes= @(0)
 }
 
-
-# Thanks to https://github.com/kendaleiv/chocolatey-veracrypt
-# and https://github.com/improbable-io/clang-choco/pull/8
-# for helping with the AutoHotKey automation.
-# This is needed for users without MSVC installed,
-# LLVM pops open a window saying that MSVC isn't detected.
-$ahkExe = 'AutoHotKey'
-$ahkFile = Join-Path $toolsDir "llvmInstall.ahk"
-$ahkProc = Start-Process -FilePath $ahkExe `
-                         -ArgumentList $ahkFile `
-                         -PassThru
- 
-$ahkId = $ahkProc.Id
-Write-Debug "$ahkExe start time:`t$($ahkProc.StartTime.ToShortTimeString())"
-Write-Debug "Process ID:`t$ahkId"
 
 Install-ChocolateyPackage @packageArgs
 Install-ChocolateyPath "$($env:SystemDrive)\Program Files\LLVM\bin" "Machine" # Machine will assert administrative rights
