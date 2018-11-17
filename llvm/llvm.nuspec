@@ -9,13 +9,12 @@
     <summary>LLVM Compiler Infrastructure</summary>
     <description><![CDATA[The LLVM Project is a collection of modular and reusable compiler and toolchain technologies. 
 
-This package installs all Windows tools, which includes but is not limited to:
+This package installs all Windows tools distributed in the release build, which includes but is not limited to:
 - clang
 - clangd
 - clang++
 - clang-format
 - lld
-- lldb
 - llvm-objdump
 ]]></description>
     <packageSourceUrl>https://github.com/bspeice/au-packages</packageSourceUrl>
@@ -24,7 +23,7 @@ This package installs all Windows tools, which includes but is not limited to:
     <mailingListUrl>https://lists.llvm.org/mailman/listinfo/llvm-dev</mailingListUrl>
     <bugTrackerUrl>https://bugs.llvm.org/</bugTrackerUrl>
     <projectSourceUrl>https://git.llvm.org/git/llvm</projectSourceUrl>
-    <tags>llvm c++ c lldb clang clangd lld</tags>
+    <tags>llvm c++ c clang clangd lld</tags>
     <licenseUrl>http://llvm.org/docs/DeveloperPolicy.html#license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/bspeice/au-packages/e114896b/llvm/DragonSmall.png</iconUrl>
