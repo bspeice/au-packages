@@ -19,6 +19,7 @@ So I built my own.
     <licenseUrl>https://github.com/fabiospampinato/notable/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.jsdelivr.net/gh/bspeice/au-packages@ec592fb2b1618fa124456e33afdb4f3de8bb30e3/notable/icons/notable.png</iconUrl>
+    <releaseNotes>https://github.com/fabiospampinato/notable/releases</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
