@@ -3,7 +3,7 @@
   <metadata>
     <id>reaper</id>
     <title>Reaper</title>
-    <version>5.965</version>
+    <version>5.964</version>
     <authors>Cockos Incorporated</authors>
     <owners>Olivier Martin</owners>
     <summary>Reaper Digital Audio Workstation</summary>
@@ -14,8 +14,7 @@
     <tags>reaper audio midi multitrack recording mixing mastering</tags>
     <licenseUrl>http://reaper.fm/purchase.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!-- TODO: update the icon, or copy it to my repository -->
-    <iconUrl>https://cdn.rawgit.com/bspeice/au-packages/2b47bf43/reaper/icons/reaper.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bspeice/au-packages@2b47bf437623f2d4f14b60783726b63e376e3199/reaper/icons/reaper.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
