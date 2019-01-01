@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>notable</id>
+    <title>Notable</title>
+    <version>1.0.1</version>
+    <authors>Fabio Spampinato</authors>
+    <owners>Fabio Spampinato, Bradlee Speice</owners>
+    <summary>The markdown-based note-taking app that doesn't suck.</summary>
+    <description><![CDATA[The markdown-based note-taking app that doesn't suck.
+
+I couldn't find a note-taking app that ticked all the boxes I'm interested in: notes are written and rendered in GitHub-flavored Markdown, no WYSIWYG, no proprietary formats, I can run a search & replace across all notes, notes support attachments, the app isn't bloated, the app has a pretty interface, tags are indefinitely nestable and can import Evernote notes (because that's what I was using before).
+
+So I built my own.
+]]></description>
+    <packageSourceUrl>https://github.com/bspeice/au-packages</packageSourceUrl>
+    <projectUrl>https://github.com/fabiospampinato/notable</projectUrl>
+    <tags>notes markdown</tags>
+    <licenseUrl>https://github.com/fabiospampinato/notable/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bspeice/au-packages@2b47bf437623f2d4f14b60783726b63e376e3199/reaper/icons/reaper.png</iconUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
