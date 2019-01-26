@@ -3,18 +3,19 @@
   <metadata>
     <id>llvm</id>
     <title>LLVM</title>
-    <version>7.0.0</version>
+    <version>7.0.1</version>
     <authors>LLVM team</authors>
     <owners>Bradlee Speice</owners>
     <summary>LLVM Compiler Infrastructure</summary>
     <description><![CDATA[The LLVM Project is a collection of modular and reusable compiler and toolchain technologies. 
 
-This package installs all Windows tools distributed in the release build, which includes but is not limited to:
+This package installs all Windows tools, which includes but is not limited to:
 - clang
 - clangd
 - clang++
 - clang-format
 - lld
+- lldb
 - llvm-objdump
 ]]></description>
     <packageSourceUrl>https://github.com/bspeice/au-packages</packageSourceUrl>

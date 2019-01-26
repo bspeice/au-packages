@@ -3,10 +3,10 @@ $ErrorActionPreference = 'Stop';
 
 $packageName= 'llvm'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32      = 'https://releases.llvm.org/7.0.0/LLVM-7.0.0-win32.exe'
-$checksum32 = 'c3aa07231ab84f7ab4bb47b3cda4393c8203f3254a04b602cdfdc116c4c058f5'
-$url64      = 'https://releases.llvm.org/7.0.0/LLVM-7.0.0-win64.exe'
-$checksum64 = '74b197a3959b0408adf0824be01db8dddfa2f9a967f4085af3fad900ed5fdbf6'
+$url32      = 'https://releases.llvm.org/7.0.1/LLVM-7.0.1-win32.exe'
+$checksum32 = 'd56d8716da871c1895646b47aa406b27045d7155efdb4c5425dbe28b41df90b3'
+$url64      = 'https://releases.llvm.org/7.0.1/LLVM-7.0.1-win64.exe'
+$checksum64 = '672e4c420d6543a8a9f8ec5f1e5f283d88ac2155ef4c57232a399160a02bff57'
 
 $packageArgs = @{
   packageName   = $packageName
