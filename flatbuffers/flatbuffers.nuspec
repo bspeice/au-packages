@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>flatbuffers</id>
+    <title>FlatBuffers</title>
+    <version>1.10.0</version>
+    <authors>Google</authors>
+    <owners>Google, Bradlee Speice</owners>
+    <summary>FlatBuffers is a cross platform serialization library architected for maximum memory efficiency. It allows you to directly access serialized data without parsing/unpacking it first, while still having great forwards/backwards compatibility.</summary>
+    <description><![CDATA[FlatBuffers is a cross platform serialization library architected for maximum memory efficiency. It allows you to directly access serialized data without parsing/unpacking it first, while still having great forwards/backwards compatibility.
+]]></description>
+    <packageSourceUrl>https://github.com/bspeice/au-packages</packageSourceUrl>
+    <projectUrl>https://github.com/google/flatbuffers</projectUrl>
+    <tags>flatc flatbuffers serialization</tags>
+    <licenseUrl>https://github.com/google/flatbuffers/blob/master/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://camo.githubusercontent.com/c33f844adebc0eb6a3ad0ecbab4234368377f33d/687474703a2f2f676f6f676c652e6769746875622e696f2f666c6174627566666572732f66706c5f6c6f676f5f736d616c6c2e706e67</iconUrl>
+    <releaseNotes>https://github.com/google/flatbuffers/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
