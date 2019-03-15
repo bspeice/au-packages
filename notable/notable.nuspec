@@ -3,7 +3,7 @@
   <metadata>
     <id>notable</id>
     <title>Notable</title>
-    <version>1.3.0</version>
+    <version>1.4.0</version>
     <authors>Fabio Spampinato</authors>
     <owners>Fabio Spampinato, Bradlee Speice</owners>
     <summary>The markdown-based note-taking app that doesn't suck.</summary>
