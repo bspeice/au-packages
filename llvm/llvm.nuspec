@@ -3,7 +3,7 @@
   <metadata>
     <id>llvm</id>
     <title>LLVM</title>
-    <version>7.0.1</version>
+    <version>8.0.0</version>
     <authors>LLVM team</authors>
     <owners>Bradlee Speice</owners>
     <summary>LLVM Compiler Infrastructure</summary>
@@ -11,11 +11,11 @@
 
 This package installs all Windows tools, which includes but is not limited to:
 - clang
+- clang-cl
 - clangd
 - clang++
 - clang-format
 - lld
-- lldb
 - llvm-objdump
 ]]></description>
     <packageSourceUrl>https://github.com/bspeice/au-packages</packageSourceUrl>
