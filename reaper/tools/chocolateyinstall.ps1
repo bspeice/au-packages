@@ -3,10 +3,10 @@ $ErrorActionPreference = 'Stop';
 
 $packageName= 'reaper'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32      = 'http://dlcf.reaper.fm/5.x/reaper5974-install.exe'
-$checksum32 = 'c94f75386db16425581a52a4ce2481cea4660c63f2b8749de65513e784e13b6e'
-$url64      = 'http://dlcf.reaper.fm/5.x/reaper5974_x64-install.exe'
-$checksum64 = '8c3d5e7aec1eeb15589778251869dc786f62e4bdcae71a5122b0c996f3726db3'
+$url32      = 'http://dlcf.reaper.fm/5.x/reaper5975-install.exe'
+$checksum32 = 'ba58bd4481f58acfad1da0d240f5216555efa71f9368a9eb85b1883e2d1890bd'
+$url64      = 'http://dlcf.reaper.fm/5.x/reaper5975_x64-install.exe'
+$checksum64 = '060fab18429c62ae9b9acd63687d0a8b8a1122afbfb3115f4d852e90c9a027ce'
 
 $packageArgs = @{
   packageName   = $packageName
