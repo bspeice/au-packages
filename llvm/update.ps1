@@ -20,8 +20,8 @@ function global:au_GetLatest {
     $dl = $download_page.links | ? href -match $re | select -First 1 -expand href
     $version = $dl -split '#' | select -Last 1
 
-    $url32 = 'https://releases.llvm.org/' + $version + '/LLVM-' + $version + '-win32.exe'
-    $url64 = 'https://releases.llvm.org/' + $version + '/LLVM-' + $version + '-win64.exe'
+    $url32 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-' + $version + '/LLVM-' + $version + '-win32.exe'
+    $url64 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-' + $version + '/LLVM-' + $version + '-win64.exe'
 
     $version = "$version"
 
