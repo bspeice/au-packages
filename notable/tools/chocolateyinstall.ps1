@@ -3,8 +3,8 @@ $ErrorActionPreference = 'Stop';
 
 $packageName= 'notable'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32      = 'https://github.com/fabiospampinato/notable/releases/download/v1.7.3/Notable.Setup.1.7.3.exe'
-$checksum32 = '1acb8246c7a6fa645831d2bee658767097d72610af889b0e53487cca1c0a9cb5'
+$url32      = 'https://github.com/fabiospampinato/notable/releases/download/v1.8.0/Notable.Setup.1.8.0.exe'
+$checksum32 = 'b816561c0ff5260bc0b36aa2f7c8cabe8f036eb720869d1f600d65885990ab34'
 
 $packageArgs = @{
   packageName   = $packageName
