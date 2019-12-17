@@ -11,11 +11,13 @@
     <iconUrl>https://raw.githubusercontent.com/bspeice/au-packages/master/tuxguitar/icons/tuxguitar.png</iconUrl>
     <licenseUrl>http://www.tuxguitar.com.ar/license.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://sourceforge.net/projects/tuxguitar/</projectSourceUrl>
-    <docsUrl>http://www.tuxguitar.com.ar/tgwiki/doku.php</docsUrl>
-    <tags>tuxguitar audio midi partition tablature</tags>
-    <summary>TuxGuitar Music Composer</summary>
-    <description>With TuxGuitar, you will be able to compose music using the following features:
+    <projectSourceUrl>https://sourceforge.net/p/tuxguitar/code/</projectSourceUrl>
+    <docsUrl>http://www.tuxguitar.com.ar/documentation.html</docsUrl>
+    <mailingListUrl>http://www.tuxguitar.com.ar/forums.html</mailingListUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/tuxguitar/bugs/</bugTrackerUrl>
+    <tags>tuxguitar audio midi partition tablature multitrack</tags>
+    <summary>TuxGuitar tablature editor</summary>
+    <description>TuxGuitar is a free, open source tablature editor. With TuxGuitar, you will be able to compose music using the following features:
 * Tablature editor
 * Score Viewer
 * Multitrack display
@@ -27,6 +29,7 @@
 * Time signature management
 * Tempo management
 * Imports and exports gp3,gp4 and gp5 files
+* Imports and exports MIDI files
     </description>
   </metadata>
   <files>
