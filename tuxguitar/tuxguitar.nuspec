@@ -12,7 +12,7 @@
     <!-- <copyright>Year Software Vendor</copyright> -->
     <licenseUrl>http://www.tuxguitar.com.ar/license.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
-    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <projectSourceUrl>https://sourceforge.net/projects/tuxguitar/</projectSourceUrl>
     <docsUrl>http://www.tuxguitar.com.ar/tgwiki/doku.php</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
