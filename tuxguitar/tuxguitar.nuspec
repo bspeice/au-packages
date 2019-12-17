@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>tuxguitar</id>
+    <version>1.5.3</version>
+    <packageSourceUrl>https://github.com/bspeice/au-packages</packageSourceUrl>
+    <owners>Jerome Benoit</owners>
+    <title>TuxGuitar</title>
+    <authors>Julian Gabriel Casadesus</authors>
+    <projectUrl>http://www.tuxguitar.com.ar/</projectUrl>
+    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/tuxguitar.png</iconUrl>-->
+    <!-- <copyright>Year Software Vendor</copyright> -->
+    <licenseUrl>http://www.tuxguitar.com.ar/license.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <docsUrl>http://www.tuxguitar.com.ar/tgwiki/doku.php</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <tags>tuxguitar audio midi partition tablature</tags>
+    <summary>TuxGuitar Music Composer</summary>
+    <description>With TuxGuitar, you will be able to compose music using the following features:
+* Tablature editor
+* Score Viewer
+* Multitrack display
+* Autoscroll while playing
+* Note duration management
+* Various effects (bend, slide, vibrato, hammer-on/pull-off)
+* Support for triplets (5,6,7,9,10,11,12)
+* Repeat open and close
+* Time signature management
+* Tempo management
+* Imports and exports gp3,gp4 and gp5 files
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
