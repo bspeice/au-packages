@@ -27,7 +27,7 @@ This package installs all Windows tools, which includes but is not limited to:
     <tags>llvm c++ c clang clangd lld</tags>
     <licenseUrl>http://llvm.org/docs/DeveloperPolicy.html#license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/bspeice/au-packages/e114896b/llvm/DragonSmall.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/bspeice/au-packages/llvm/icons/DragonSmall.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
