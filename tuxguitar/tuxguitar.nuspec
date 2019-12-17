@@ -9,13 +9,10 @@
     <authors>Julian Gabriel Casadesus</authors>
     <projectUrl>http://www.tuxguitar.com.ar/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/bspeice/au-packages/master/tuxguitar/icons/tuxguitar.png</iconUrl>
-    <!-- <copyright>Year Software Vendor</copyright> -->
     <licenseUrl>http://www.tuxguitar.com.ar/license.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
     <projectSourceUrl>https://sourceforge.net/projects/tuxguitar/</projectSourceUrl>
     <docsUrl>http://www.tuxguitar.com.ar/tgwiki/doku.php</docsUrl>
-    <!--<mailingListUrl></mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
     <tags>tuxguitar audio midi partition tablature</tags>
     <summary>TuxGuitar Music Composer</summary>
     <description>With TuxGuitar, you will be able to compose music using the following features:
