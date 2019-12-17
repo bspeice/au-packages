@@ -15,7 +15,7 @@
     <docsUrl>http://www.tuxguitar.com.ar/tgwiki/doku.php</docsUrl>
     <tags>tuxguitar audio midi partition tablature</tags>
     <summary>TuxGuitar Music Composer</summary>
-    <description>With TuxGuitar, you will be able to compose music using the following features:
+    <description><![CDATA[With TuxGuitar, you will be able to compose music using the following features:
 * Tablature editor
 * Score Viewer
 * Multitrack display
@@ -26,7 +26,7 @@
 * Repeat open and close
 * Time signature management
 * Tempo management
-* Imports and exports gp3,gp4 and gp5 files
+* Imports and exports gp3,gp4 and gp5 files]]>
     </description>
   </metadata>
   <files>
