@@ -16,8 +16,8 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
 
-    $re  = "reaper.*-install.exe"
-    $installer = $download_page.links | ? href -match $re | Select-Object -First 1 -expand href
+    $regex  = "reaper.*-install.exe"
+    $installer = $download_page.links | ? href -match $regex | Select-Object -First 1 -expand href
     $version_compact = $installer -split 'reaper|-' | Select-Object -Last 1 -Skip 1
     Write-Host $version_compact
     $version_major = '6'
