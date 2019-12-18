@@ -12,4 +12,4 @@ TuxGuitar is a free, open source tablature editor. With TuxGuitar, you will be a
 * Repeat open and close
 * Time signature management
 * Tempo management
-* Imports and exports gp3,gp4 and gp5 files
+* Imports and exports gp3, gp4 and gp5 files
