@@ -13,9 +13,9 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-    $regex   = 'tuxguitar-.*-windows-x86-installer.exe'
-    $url     = $download_page.links | ? href -match $regex | Select-Object -First 1 -expand href
-    $version = $url -split '-|.exe' | Select-Object -Last 1 -Skip 2
+    $regex = 'TuxGuitar-.*'
+    $version = (($download_page.Links | ? href -match $regex | Select-Object -First 1 -expand href) -split '-' | Select-Object -Skip 1).Trim('/')
+    $url = 'https://sourceforge.net/projects/tuxguitar/files/TuxGuitar/TuxGuitar-' + $version + '/tuxguitar-' + $version + '-windows-x86-installer.exe/download'
     return @{ Version = $version; URL32 = $url }
 }
 
