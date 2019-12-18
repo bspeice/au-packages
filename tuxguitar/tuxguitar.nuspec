@@ -4,7 +4,7 @@
     <id>tuxguitar</id>
     <version>1.5.3</version>
     <packageSourceUrl>https://github.com/bspeice/au-packages</packageSourceUrl>
-    <owners>Jerome Benoit</owners>
+    <owners>nipsky, Jerome Benoit</owners>
     <title>TuxGuitar</title>
     <authors>Julian Gabriel Casadesus</authors>
     <projectUrl>http://www.tuxguitar.com.ar/</projectUrl>
@@ -16,8 +16,8 @@
     <mailingListUrl>http://www.tuxguitar.com.ar/forums.html</mailingListUrl>
     <bugTrackerUrl>https://sourceforge.net/p/tuxguitar/bugs/</bugTrackerUrl>
     <tags>tuxguitar music guitar audio midi partition tablature multitrack</tags>
-    <summary>TuxGuitar tablature editor</summary>
-    <description>TuxGuitar is a free, open source tablature editor. With TuxGuitar, you will be able to compose music using the following features:
+    <summary>TuxGuitar multitrack tablature editor</summary>
+    <description>TuxGuitar is a free, open source multitrack tablature editor. With TuxGuitar, you will be able to compose music using the following features:
 * Tablature editor
 * Score Viewer
 * Multitrack display
