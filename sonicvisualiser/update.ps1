@@ -9,8 +9,8 @@ function global:au_GetLatest {
     $regex64 = '.*-win64.msi$'
     $url64   = $download_page.links | ? href -match $regex64 | Select-Object -Skip 1 -expand href
     $version = $url64 -split '-|.msi' | Select-Object -Last 1 -Skip 2
-    # Write-Host $url64
     # Write-Host $url
+    # Write-Host $url64
     # Write-Host $version
     return @{ Version = $version; URL32 = $url; URL64 = $url64 }
 }
