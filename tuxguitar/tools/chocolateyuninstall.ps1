@@ -5,7 +5,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = 'tuxguitar*'
   fileType      = 'EXE'
-  silentArgs   = '--mode unattended --unattendedmodeui none'
+  silentArgs    = '--mode unattended --unattendedmodeui none'
   validExitCodes= @(0)
 }
 
