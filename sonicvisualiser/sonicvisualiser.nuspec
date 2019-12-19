@@ -5,7 +5,7 @@
     <version>4.0.1</version>
     <packageSourceUrl>https://github.com/bspeice/au-packages</packageSourceUrl>
     <owners>Jerome Benoit</owners>
-    <title>sonicvisualiser</title>
+    <title>Sonic Visualiser</title>
     <authors>Centre for Digital Music at Queen Mary - University of London</authors>
     <projectUrl>https://www.sonicvisualiser.org/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/bspeice/au-packages/master/sonicvisualiser/icons/sv-128x128.png</iconUrl>
