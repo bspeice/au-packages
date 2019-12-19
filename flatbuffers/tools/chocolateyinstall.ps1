@@ -3,8 +3,8 @@ $ErrorActionPreference = 'Stop';
 
 $packageName= 'notable'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32      = 'https://github.com/google/flatbuffers/releases/download/v1.10.0/flatc_windows_exe.zip'
-$checksum32 = 'e6efb66c5c531856506f11799956f03c2397ef2ba37538558dbd7ca11fdb9faa'
+$url32      = 'https://github.com/google/flatbuffers/releases/download/v1.11.0/flatc_windows_exe.zip'
+$checksum32 = '1d23e84ac0d76ac5da6d6c7232c0564191e7c846b27c09d4650bd386888b4768'
 
 $packageArgs = @{
   packageName   = $packageName

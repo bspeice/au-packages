@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>tuxguitar</id>
+    <version>1.5.3</version>
+    <packageSourceUrl>https://github.com/bspeice/au-packages</packageSourceUrl>
+    <owners>nipsky, Jerome Benoit</owners>
+    <title>TuxGuitar</title>
+    <authors>Julian Gabriel Casadesus</authors>
+    <projectUrl>http://www.tuxguitar.com.ar/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/bspeice/au-packages/master/tuxguitar/icons/tuxguitar.png</iconUrl>
+    <licenseUrl>http://www.tuxguitar.com.ar/license.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://sourceforge.net/p/tuxguitar/code/</projectSourceUrl>
+    <docsUrl>http://www.tuxguitar.com.ar/documentation.html</docsUrl>
+    <mailingListUrl>http://www.tuxguitar.com.ar/forums.html</mailingListUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/tuxguitar/bugs/</bugTrackerUrl>
+    <tags>tuxguitar music guitar audio midi partition tablature multitrack</tags>
+    <summary>TuxGuitar multitrack tablature editor</summary>
+    <description>TuxGuitar is a free, open source multitrack tablature editor. With TuxGuitar, you will be able to compose music using the following features:
+* Tablature editor
+* Score Viewer
+* Multitrack display
+* Autoscroll while playing
+* Note duration management
+* Various effects (bend, slide, vibrato, hammer-on/pull-off)
+* Support for triplets (5,6,7,9,10,11,12)
+* Repeat open and close
+* Time signature management
+* Tempo management
+* Imports and exports gp3, gp4 and gp5 files
+* Imports and exports MIDI files
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
