@@ -1,6 +1,6 @@
 ﻿## TuxGuitar
 
-TuxGuitar is a free, open source tablature editor. With TuxGuitar, you will be able to compose music using the following features:
+TuxGuitar is a free, open source multitrack tablature editor. With TuxGuitar, you will be able to compose music using the following features:
 
 * Tablature editor
 * Score Viewer
