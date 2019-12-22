@@ -20,7 +20,7 @@ function global:au_GetLatest {
     $installer = $download_page.links | ? href -match $regex | Select-Object -First 1 -expand href
     $version_compact = $installer -split 'reaper|-' | Select-Object -Last 1 -Skip 1
     Write-Host $version_compact
-    $version_major = '6'
+    $version_major = $installer -split '/|\.' | Select-Object -First 1 -Skip 1
     $version_minor = $version_compact -split $version_major,2 -join '.'
 
     $version = $version_major + $version_minor
