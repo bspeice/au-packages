@@ -5,7 +5,7 @@
     <title>Reaper</title>
     <version>6.02</version>
     <authors>Cockos Incorporated</authors>
-    <owners>Olivier Martin</owners>
+    <owners>Olivier Martin, Bradlee Speice, Jerome Benoit</owners>
     <summary>Reaper Digital Audio Workstation</summary>
     <description><![CDATA[REAPER is a complete digital audio production application for Windows and OS X, offering a full multitrack audio and MIDI recording, editing, processing, mixing and mastering toolset.
 ]]></description>
