@@ -1,7 +1,7 @@
 ﻿
 $ErrorActionPreference = 'Stop';
 
-$packageName= 'llvm'
+$packageName= $env:ChocolateyPackageName
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url32      = 'http://releases.llvm.org/9.0.0/LLVM-9.0.0-win32.exe'
 $checksum32 = '089e226dc0d3ecb292f344cdbed96c5d9a705564cc578957a955b4ed71c70cae'

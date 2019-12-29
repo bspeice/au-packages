@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop';
 
-$packageName = 'llvm'
+$packageName = $env:ChocolateyPackageName
 $softwareName = 'llvm*'
 $installerType = 'EXE'
 
