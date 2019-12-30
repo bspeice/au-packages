@@ -5,8 +5,8 @@ $releases = 'https://sourceforge.net/projects/tuxguitar/files/TuxGuitar/'
 function global:au_SearchReplace {
     @{
         "tools\chocolateyInstall.ps1" = @{
-            "(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-            "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"     
+            "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
+            "(^\s*checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
     }
 }
