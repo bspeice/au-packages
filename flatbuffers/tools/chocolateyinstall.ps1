@@ -8,6 +8,7 @@ $checksum32 = '1d23e84ac0d76ac5da6d6c7232c0564191e7c846b27c09d4650bd386888b4768'
 
 $packageArgs = @{
   packageName   = $packageName
+  unzipLocation = $toolsDir
   fileType      = 'EXE'
   url           = $url32
 
@@ -15,8 +16,6 @@ $packageArgs = @{
 
   checksum32    = $checksum32
   checksumType32= 'sha256'
-
-  unzipLocation = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 }
 
 Install-ChocolateyZipPackage @packageArgs

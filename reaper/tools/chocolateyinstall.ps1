@@ -9,6 +9,7 @@ $checksum64 = '18aad54087f90b8185d2d2cf9522b1b0e2e2480061675098069793d733e87087'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
+  unzipLocation = $toolsDir
   fileType      = 'EXE'
   url           = $url32
   url64bit      = $url64

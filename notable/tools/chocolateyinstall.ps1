@@ -8,6 +8,7 @@ $checksum32 = 'ec72c75c27dba0d965dce7ce4ea114cd4f6febc3a3c92816f8d5dc41ee7baa65'
 
 $packageArgs = @{
   packageName   = $packageName
+  unzipLocation = $toolsDir
   fileType      = 'EXE'
   url           = $url32
 

@@ -10,6 +10,7 @@ $checksum64 = '71ed99a6720945d76b6772584735f2ed472f12719dff184a0b1a6a35047b8863'
 
 $packageArgs = @{
   packageName   = $packageName
+  unzipLocation = $toolsDir
   fileType      = 'EXE'
   url           = $url32
   url64bit      = $url64
