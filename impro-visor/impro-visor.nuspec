@@ -7,10 +7,10 @@
     <owners>Jerome Benoit</owners>
 
     <title>Impro-Visor</title>
-    <authors>Robert M. Keller</authors>
+    <authors>Robert M. Keller, Harvey Mudd College Computer Science Department</authors>
     <projectUrl>http://www.impro-visor.com/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/Impro-Visor/Impro-Visor/master/packaging/Impro-Visor16.png</iconUrl>
-    <copyright>2019</copyright>
+    <copyright>2008-2019 Robert M. Keller</copyright>
     <licenseUrl>https://raw.githubusercontent.com/Impro-Visor/Impro-Visor/master/lgpl-3.0.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/Impro-Visor/Impro-Visor</projectSourceUrl>
