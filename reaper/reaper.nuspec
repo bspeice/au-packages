@@ -15,6 +15,7 @@
     <licenseUrl>http://reaper.fm/purchase.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.jsdelivr.net/gh/bspeice/au-packages@2b47bf437623f2d4f14b60783726b63e376e3199/reaper/icons/reaper.png</iconUrl>
+    <releaseNotes>https://www.reaper.fm/download.php#whatsnew</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
