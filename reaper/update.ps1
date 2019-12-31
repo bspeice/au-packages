@@ -21,9 +21,9 @@ function global:au_GetLatest {
     $version_compact = $installer -split 'reaper|-' | Select-Object -Last 1 -Skip 1
     Write-Host $version_compact
     $version_major = $installer -split '/|\.' | Select-Object -First 1 -Skip 1
-    $version_minor = $version_compact -split $version_major,2 -join '.'
+    $version_minor = $version_compact -split $version_major,2 -join ''
 
-    $version = $version_major + $version_minor
+    $version = $version_major + '.' + $version_minor
 
     $url32 = 'http://dlcf.reaper.fm/' + $version_major + '.x/reaper' + $version_compact + '-install.exe'
     $url64 = 'http://dlcf.reaper.fm/' + $version_major + '.x/reaper' + $version_compact + '_x64-install.exe'
