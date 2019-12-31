@@ -1,4 +1,4 @@
-This repository contains [chocolatey automatic packages](https://chocolatey.org/docs/automatic-packages).  
+This repository contains [chocolatey automatic packages](https://chocolatey.org/docs/automatic-packages).
 The repository is setup so that you can manage your packages entirely from the GitHub web interface (using AppVeyor to update and push packages) and/or using the local repository copy.
 
 ## Prerequisites
@@ -22,11 +22,11 @@ In a package directory run: `Test-Package`. This function can be used to start t
 ### Single package
 
 Run from within the directory of the package to update that package:
-   
+
     cd <package_dir>
     ./update.ps1
 
-If this script is missing, the package is not automatic.  
+If this script is missing, the package is not automatic.
 Set `$au_Force = $true` prior to script call to update the package even if no new version is found.
 
 ### Multiple packages
@@ -58,14 +58,14 @@ You can force package update and push using git commit message. AppVeyor build i
 If commit message includes `[AU <forced_packages>]` message on the first line, the `forced_packages` string will be sent to the updater.
 
 Examples:
-- `[AU pkg1 pkg2]`  
+- `[AU pkg1 pkg2]`
 Force update ONLY packages `pkg1` and `pkg2`.
-- `[AU pkg1:ver1 pkg2 non_existent]`  
+- `[AU pkg1:ver1 pkg2 non_existent]`
 Force `pkg1` and use explicit version `ver1`, force `pkg2` and ignore `non_existent`.
 
 To see how versions behave when package update is forced see the [force documentation](https://github.com/majkinetor/au/blob/master/README.md#force-update).
 
-You can also push manual packages with command `[PUSH pkg1 ... pkgN]`. This works for any package anywhere in the file hierarchy and will not invoke AU updater at all. 
+You can also push manual packages with command `[PUSH pkg1 ... pkgN]`. This works for any package anywhere in the file hierarchy and will not invoke AU updater at all.
 
 If there are no changes in the repository use `--allow-empty` git parameter:
 
