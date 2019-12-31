@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop';
 
-$packageName = 'Notable'
-$softwareName = 'Notable*'
+$packageName = $env:ChocolateyPackageName
+$softwareName = 'Flatbuffers*'
 $installerType = 'EXE'
 
 $silentArgs = '/S'

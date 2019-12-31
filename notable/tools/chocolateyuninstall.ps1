@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop';
 
-$packageName = 'Notable'
+$packageName = $env:ChocolateyPackageName
 $softwareName = 'Notable*'
 $installerType = 'EXE'
 

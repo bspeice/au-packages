@@ -1,0 +1,3 @@
+﻿## Impro-Visor
+
+Impro-Visor (short for “Improvisation Advisor”) is a music notation program designed to help jazz musicians compose and hear solos similar to ones that might be improvised. The objective is to improve understanding of solo construction and tune chord changes. There are other, secondary, things it can do, such as improvise on its own. It has also been used for transcription. Because rhythm-section (e.g. piano, bass, drums) accompaniment is automatically generated from chords, Impro-Visor can be used as a play-along device. Now having a wider array of accompaniment styles, its use is not limited to jazz.
