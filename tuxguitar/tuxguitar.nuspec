@@ -31,8 +31,8 @@
 * Imports and exports gp3, gp4 and gp5 files
 * Imports and exports MIDI files
     </description>
+    <releaseNotes>https://sourceforge.net/p/tuxguitar/news/</releaseNotes>
   </metadata>
-  <releaseNotes>https://sourceforge.net/p/tuxguitar/news/</releaseNotes>
   <files>
     <file src="tools\**" target="tools" />
   </files>
