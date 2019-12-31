@@ -4,4 +4,20 @@ Update-AUPackages.md
 update_info.xml
 api_key
 
+# OSX
+#
 .DS_Store
+
+# VisualStudioCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Vim
+# Persistent undo
+[._]*.un~
+# Temporary
+.netrwhist
+*~
