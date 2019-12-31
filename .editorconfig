@@ -7,7 +7,7 @@ tab_width = 2
 charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
-end_of_line = lf
+end_of_line = crlf
 max_line_length = 100
 
 [{Makefile,**.mk}]
