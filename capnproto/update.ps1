@@ -15,7 +15,7 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
 
     $re  = "capnproto-c\+\+-win32-.*.zip"
-    $installer = $download_page.links | ? href -match $re | select -First 1 -expand href
+    $installer = $download_page.Links | ? href -match $re | select -First 1 -expand href
     Write-Host $installer
     $version = $installer -split '-|\.zip' | select -First 1 -Skip 3
     Write-Host $version
