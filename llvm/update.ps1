@@ -1,7 +1,5 @@
 import-module au
 
-$releases = 'https://releases.llvm.org/'
-
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyInstall.ps1" = @{
@@ -14,16 +12,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $latest_release_endpoint = 'https://api.github.com/repos/fabiospampinato/notable/releases/latest'
+    $latest_release = Invoke-RestMethod $latest_release_endpoint
+    $name = $latest_release.name
+    $version = $name -split 'LLVM ' | Select-Object -Last 1
 
-    $re = "download.html\#[0-9].*"
-    $dl = $download_page.links | ? href -match $re | select -First 1 -expand href
-    $version = $dl -split '#' | select -Last 1
-
-    $url32 = 'http://releases.llvm.org/' + $version + '/LLVM-' + $version + '-win32.exe'
-    $url64 = 'http://releases.llvm.org/' + $version + '/LLVM-' + $version + '-win64.exe'
-
-    $version = "$version"
+    $url32 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-' + $version + '/LLVM-' + $version + '-win32.exe'
+    $url64 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-' + $version + '/LLVM-' + $version + '-win64.exe'
 
     Write-Host $version
     Write-Host $url32

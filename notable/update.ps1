@@ -1,7 +1,5 @@
 import-module au
 
-$releases = 'https://api.github.com/repos/fabiospampinato/notable/releases'
-
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyInstall.ps1" = @{
@@ -12,9 +10,10 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $all_releases = Invoke-RestMethod $releases
-    $tag = $all_releases[0].name
-    $version = $tag -split 'v' | select -Last 1
+    $latest_release_endpoint = 'https://api.github.com/repos/fabiospampinato/notable/releases/latest'
+    $latest_release = Invoke-RestMethod $latest_release_endpoint
+    $name = $latest_release.name
+    $version = $name -split 'v' | Select-Object -Last 1
 
     $url32 = 'https://github.com/fabiospampinato/notable/releases/download/v' + $version + '/Notable.Setup.' + $version + '.exe'
 
