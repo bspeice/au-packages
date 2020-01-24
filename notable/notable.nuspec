@@ -16,7 +16,7 @@ So I built my own.
     <packageSourceUrl>https://github.com/bspeice/au-packages</packageSourceUrl>
     <projectUrl>https://github.com/fabiospampinato/notable</projectUrl>
     <tags>notes markdown</tags>
-    <licenseUrl>https://github.com/fabiospampinato/notable/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/notable/notable/blob/master/SOURCE_CODE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.jsdelivr.net/gh/bspeice/au-packages@ec592fb2b1618fa124456e33afdb4f3de8bb30e3/notable/icons/notable.png</iconUrl>
     <releaseNotes>https://github.com/fabiospampinato/notable/releases</releaseNotes>
