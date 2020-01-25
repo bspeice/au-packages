@@ -15,15 +15,19 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
 
     $re  = "capnproto-c\+\+-win32-.*.zip"
-    $installer = $download_page.Links | ? href -match $re | select -First 1 -expand href
-    Write-Host $installer
-    $version = $installer -split '-|\.zip' | select -First 1 -Skip 3
-    Write-Host $version
+    $installer_exe = $download_page.Links | ? href -match $re | select -First 1 -expand href
+    # Write-Host $installer_exe
+    if ($installer_exe) {
+      $version = $installer_exe -split '-|\.zip' | select -First 1 -Skip 3
+    }
+    # Write-Host $version
 
-    $url32 = 'https://capnproto.org/capnproto-c++-win32-' + $version + '.zip'
+    if ($version) {
+      $url32 = 'https://capnproto.org/capnproto-c++-win32-' + $version + '.zip'
+    }
 
-    Write-Host $version
-    Write-Host $url32
+    # Write-Host $version
+    # Write-Host $url32
 
     return @{ URL32 = $url32; Version = $version }
 }
