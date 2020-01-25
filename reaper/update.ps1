@@ -17,20 +17,30 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     $regex  = "reaper.*-install.exe"
-    $installer = $download_page.Links | ? href -match $regex | Select-Object -First 1 -expand href
-    $version_compact = $installer -split 'reaper|-' | Select-Object -Last 1 -Skip 1
-    Write-Host $version_compact
-    $version_major = $installer -split '/|\.' | Select-Object -First 1 -Skip 1
-    $version_minor = $version_compact -split $version_major,2 -join ''
+    $installer_exe = $download_page.Links | ? href -match $regex | Select-Object -First 1 -expand href
+    if ($installer_exe) {
+      $version_compact = $installer_exe -split 'reaper|-' | Select-Object -Last 1 -Skip 1
+    }
+    # Write-Host $version_compact
+    if ($installer_exe) {
+      $version_major = $installer_exe -split '/|\.' | Select-Object -First 1 -Skip 1
+    }
+    if ($version_compact -And $version_major) {
+      $version_minor = $version_compact -split $version_major,2 -join ''
+    }
 
-    $version = $version_major + '.' + $version_minor
+    if ($version_major -And $version_minor) {
+      $version = $version_major + '.' + $version_minor
+    }
 
-    $url32 = 'http://dlcf.reaper.fm/' + $version_major + '.x/reaper' + $version_compact + '-install.exe'
-    $url64 = 'http://dlcf.reaper.fm/' + $version_major + '.x/reaper' + $version_compact + '_x64-install.exe'
+    if ($version_compact -And $version_major) {
+      $url32 = 'http://dlcf.reaper.fm/' + $version_major + '.x/reaper' + $version_compact + '-install.exe'
+      $url64 = 'http://dlcf.reaper.fm/' + $version_major + '.x/reaper' + $version_compact + '_x64-install.exe'
+    }
 
-    Write-Host $version
-    Write-Host $url32
-    Write-Host $url64
+    # Write-Host $version
+    # Write-Host $url32
+    # Write-Host $url64
 
     return @{ URL64 = $url64; URL32 = $url32; Version = $version }
 }
