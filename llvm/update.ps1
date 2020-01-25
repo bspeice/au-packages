@@ -13,7 +13,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $latest_release_endpoint = 'https://api.github.com/repos/llvm/llvm-project/releases/latest'
-    $latest_release = Invoke-RestMethod $latest_release_endpoint
+    $latest_release = Invoke-RestMethod $latest_release_endpoint -UseBasicParsing
     $name = $latest_release.name
     $version = $name -split 'LLVM ' | Select-Object -Last 1
 
