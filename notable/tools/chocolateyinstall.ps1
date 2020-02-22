@@ -3,7 +3,7 @@ $ErrorActionPreference = 'Stop';
 
 $packageName= $env:ChocolateyPackageName
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32      = 'https://github.com/fabiospampinato/notable/releases/download/v1.8.4/Notable.Setup.1.8.4.exe'
+$url32      = 'https://github.com/notable/notable/releases/download/v1.8.4/Notable.Setup.1.8.4.exe'
 $checksum32 = '85781c48957b459ef417cb553a704fa205e81cbfba937666846d78103be8b952'
 
 $packageArgs = @{

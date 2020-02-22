@@ -6,20 +6,42 @@
     <version>1.8.4</version>
     <authors>Fabio Spampinato</authors>
     <owners>Fabio Spampinato, Bradlee Speice</owners>
-    <summary>The markdown-based note-taking app that doesn't suck.</summary>
-    <description><![CDATA[The markdown-based note-taking app that doesn't suck.
+    <summary>The Markdown-based note-taking app that doesn't suck.</summary>
+    <description><![CDATA[### Markdown-Based
 
-I couldn't find a note-taking app that ticked all the boxes I'm interested in: notes are written and rendered in GitHub-flavored Markdown, no WYSIWYG, no proprietary formats, I can run a search & replace across all notes, notes support attachments, the app isn't bloated, the app has a pretty interface, tags are indefinitely nestable and can import Evernote notes (because that's what I was using before).
+Notes are written in Markdown, plus you can write KaTeX expressions, Mermaid diagrams and more, check out our built-in Markdown cheatsheet.
 
-So I built my own.
+Notable provides a very powerful Markdown editor, it's the same one VS Code uses in fact, so features like multi-cursors, a minimap and best-in-class syntax highlighting are built-in.
+
+### No Vendor Lock-In
+
+Notes and attachments are simply stored on your disk, this is extremely portable and powerful: you could edit your notes via a third-party editor on mobile, have them synchronized via Dropbox, use Git, run a regex-based search and replace etc.
+
+### Dark Theme
+
+A dark theme is also available. In the future support for custom themes will be added as well.
+
+### Zen Mode
+
+Zen mode provides a minimalistic editing and reading experience, hiding everything that's not necessary.
+
+Notable is also keyboard friendly, has a quick open window, and we'll soon add a command palette too, so you won't have to click any buttons if you don't want to.
+
+### Multi-Note Editor
+
+A multi-note editor is available for performing an action, like favoriting, pinning, deleting, tagging etc., on multiple notes at once.
+
+### Split Editor
+
+A split-editor is available for quickly checking out how your note will be rendered while you're editing it.
 ]]></description>
     <packageSourceUrl>https://github.com/bspeice/au-packages</packageSourceUrl>
-    <projectUrl>https://github.com/fabiospampinato/notable</projectUrl>
-    <tags>notes markdown</tags>
+    <projectUrl>https://github.com/notable/notable</projectUrl>
+    <tags>electron markdown notes editor</tags>
     <licenseUrl>https://github.com/notable/notable/blob/master/SOURCE_CODE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.jsdelivr.net/gh/bspeice/au-packages@ec592fb2b1618fa124456e33afdb4f3de8bb30e3/notable/icons/notable.png</iconUrl>
-    <releaseNotes>https://github.com/fabiospampinato/notable/releases</releaseNotes>
+    <releaseNotes>https://github.com/notable/notable/releases</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
