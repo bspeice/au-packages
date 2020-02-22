@@ -7,7 +7,7 @@
     <authors>LLVM team</authors>
     <owners>Bradlee Speice</owners>
     <summary>LLVM Compiler Infrastructure</summary>
-    <description><![CDATA[The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
+    <description><![CDATA[The LLVM Project is a collection of modular and reusable compiler and toolchain technologies. 
 
 This package installs all Windows tools, which includes but is not limited to:
 - clang
@@ -23,7 +23,7 @@ This package installs all Windows tools, which includes but is not limited to:
     <docsUrl>https://llvm.org/docs/</docsUrl>
     <mailingListUrl>https://lists.llvm.org/mailman/listinfo/llvm-dev</mailingListUrl>
     <bugTrackerUrl>https://bugs.llvm.org/</bugTrackerUrl>
-    <projectSourceUrl>https://git.llvm.org/git/llvm</projectSourceUrl>
+    <projectSourceUrl>https://github.com/llvm/llvm-project</projectSourceUrl>
     <tags>llvm c++ c clang clangd lld</tags>
     <licenseUrl>http://llvm.org/docs/DeveloperPolicy.html#license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
