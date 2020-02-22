@@ -10,12 +10,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $latest_release_endpoint = 'https://api.github.com/repos/fabiospampinato/notable/releases/latest'
+    $latest_release_endpoint = 'https://api.github.com/repos/notable/notable/releases/latest'
     $latest_release = Invoke-RestMethod $latest_release_endpoint -UseBasicParsing
     $name = $latest_release.name
     $version = $name -split 'v' | Select-Object -Last 1
 
-    $url32 = 'https://github.com/fabiospampinato/notable/releases/download/v' + $version + '/Notable.Setup.' + $version + '.exe'
+    $url32 = 'https://github.com/notable/notable/releases/download/v' + $version + '/Notable.Setup.' + $version + '.exe'
 
     Write-Host $version
     Write-Host $url32
