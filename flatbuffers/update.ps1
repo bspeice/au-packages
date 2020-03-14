@@ -15,7 +15,7 @@ function global:au_GetLatest {
     $name = $latest_release.name
     $version = $name -split ' ' | select -Last 1
 
-    $url32 = 'https://github.com/google/flatbuffers/releases/download/v' + $version + '/flatc_windows_exe.zip'
+    $url32 = 'https://github.com/google/flatbuffers/releases/download/v' + $version + '/flatc_windows.zip'
 
     Write-Host $version
     Write-Host $url32
