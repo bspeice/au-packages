@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>tuxguitar</id>
-    <version>1.5.3</version>
+    <version>1.5.4</version>
     <packageSourceUrl>https://github.com/bspeice/au-packages</packageSourceUrl>
     <owners>nipsky, Jerome Benoit</owners>
     <title>TuxGuitar</title>
@@ -17,7 +17,8 @@
     <bugTrackerUrl>https://sourceforge.net/p/tuxguitar/bugs/</bugTrackerUrl>
     <tags>tuxguitar music guitar audio midi partition tablature multitrack</tags>
     <summary>TuxGuitar multitrack tablature editor</summary>
-    <description>TuxGuitar is a free, open source multitrack tablature editor. With TuxGuitar, you will be able to compose music using the following features:
+    <description><![CDATA[TuxGuitar is a free, open source multitrack tablature editor. With TuxGuitar, you will be able to compose music using the following features:
+
 * Tablature editor
 * Score Viewer
 * Multitrack display
@@ -29,8 +30,7 @@
 * Time signature management
 * Tempo management
 * Imports and exports gp3, gp4 and gp5 files
-* Imports and exports MIDI files
-    </description>
+]]></description>
     <releaseNotes>https://sourceforge.net/p/tuxguitar/news/</releaseNotes>
   </metadata>
   <files>
