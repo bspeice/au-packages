@@ -31,6 +31,7 @@ function global:au_GetLatest {
 
     if ($version_major -And $version_minor) {
       $version = $version_major + '.' + $version_minor
+      $version = Get-Version $version
     }
 
     if ($version_compact -And $version_major) {
