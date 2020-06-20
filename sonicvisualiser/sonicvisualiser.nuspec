@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
    <id>sonicvisualiser</id>
-    <version>4.0.1</version>
+    <version>4.1</version>
     <packageSourceUrl>https://github.com/bspeice/au-packages</packageSourceUrl>
     <owners>Jerome Benoit</owners>
     <title>Sonic Visualiser</title>
@@ -18,7 +18,8 @@
     <bugTrackerUrl>https://code.soundsoftware.ac.uk/projects/sonic-visualiser/issues</bugTrackerUrl>
     <tags>sonicvisualiser audio visualisation analysis annotation</tags>
     <summary>Sonic Visualiser: visualisation, analysis, and annotation of music audio recordings</summary>
-    <description>Sonic Visualiser is a free, open-source application for Windows, Linux, and Mac, designed to be the first program you reach for when want to study a music recording closely. It's designed for musicologists, archivists, signal-processing researchers, and anyone else looking for a friendly way to look at what lies inside the audio file.</description>
+    <description><![CDATA[Sonic Visualiser is a free, open-source application for Windows, Linux, and Mac, designed to be the first program you reach for when want to study a music recording closely. It's designed for musicologists, archivists, signal-processing researchers, and anyone else looking for a friendly way to look at what lies inside the audio file.
+]]></description>
     <releaseNotes>https://www.sonicvisualiser.org/news/index.html</releaseNotes> 
   </metadata>
   <files>
