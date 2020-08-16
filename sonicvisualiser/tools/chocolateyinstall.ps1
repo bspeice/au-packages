@@ -2,8 +2,8 @@
 $ErrorActionPreference = 'Stop';
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://bintray.com/sonic-visualiser/sonic-visualiser/download_file?file_path=sonic-visualiser-4.1-win32.msi'
-$url64      = 'https://bintray.com/sonic-visualiser/sonic-visualiser/download_file?file_path=sonic-visualiser-4.1-win64.msi'
+$url        = 'https://bintray.com/sonic-visualiser/sonic-visualiser/download_file?file_path=sonic-visualiser-4.2-win32.msi'
+$url64      = 'https://bintray.com/sonic-visualiser/sonic-visualiser/download_file?file_path=sonic-visualiser-4.2-win64.msi'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -14,9 +14,9 @@ $packageArgs = @{
 
   softwareName  = 'sonicvisualiser*'
 
-  checksum      = 'ade263a1933991e3f9e29f4aba8df7ef63033758d80286c5b4d4cff4676edb24'
+  checksum      = '5923c1932c7a9051c68a503b70147108bc7aead06bc06d1aa476f5a821fafc77'
   checksumType  = 'sha256'
-  checksum64    = 'f30177f6d69898476ba423efa67d9e57fdc5b84e9bf6389b338229bbc3b71a8a'
+  checksum64    = 'eb759f4a48b97320d5376364816cd2993ed4a5774f3b7f5658da499480dd110b'
   checksumType64= 'sha256'
 
   silentArgs    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
