@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>impro-visor</id>
@@ -19,7 +19,8 @@
     <bugTrackerUrl>https://github.com/Impro-Visor/Impro-Visor/issues</bugTrackerUrl>
     <tags>impro-visor music improvisation</tags>
     <summary>Impro-Visor® is a music notation tool for producing monophonic lead sheets, specifically intended to help the improviser.</summary>
-    <description>Impro-Visor® (short for “Improvisation Advisor”) is a music notation program designed to help jazz musicians compose and hear solos similar to ones that might be improvised. The objective is to improve understanding of solo construction and tune chord changes. There are other, secondary, things it can do, such as improvise on its own. It has also been used for transcription. Because rhythm-section (e.g. piano, bass, drums) accompaniment is automatically generated from chords, Impro-Visor can be used as a play-along device. Now having a wider array of accompaniment styles, its use is not limited to jazz.</description>
+    <description><![CDATA[Impro-Visor (short for “Improvisation Advisor”) is a music notation program designed to help jazz musicians compose and hear solos similar to ones that might be improvised. The objective is to improve understanding of solo construction and tune chord changes. There are other, secondary, things it can do, such as improvise on its own. It has also been used for transcription. Because rhythm-section (e.g. piano, bass, drums) accompaniment is automatically generated from chords, Impro-Visor can be used as a play-along device. Now having a wider array of accompaniment styles, its use is not limited to jazz.
+]]></description>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

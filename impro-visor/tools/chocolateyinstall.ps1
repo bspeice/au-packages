@@ -14,9 +14,9 @@ $packageArgs = @{
 
   softwareName  = 'impro-visor*'
 
-  checksum      = 'BE7321ACFBDE491EB8086451DD25062670376B9AE500421D34809F1EFA0BAF41'
+  checksum      = 'be7321acfbde491eb8086451dd25062670376b9ae500421d34809f1efa0baf41'
   checksumType  = 'sha256'
-  checksum64    = '2265025A3F8D55177F6A9AFB904089D1700EB784B92F453309A8F86482BE3045'
+  checksum64    = '2265025a3f8d55177f6a9afb904089d1700eb784b92f453309a8f86482be3045'
   checksumType64= 'sha256'
 
   silentArgs   = '-q'
