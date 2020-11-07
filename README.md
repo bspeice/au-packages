@@ -5,8 +5,10 @@ The repository is setup so that you can manage your packages entirely from the G
 
 To run locally you will need:
 
-- Powershell 5+: `cinst powershell`
-- [Chocolatey Automatic Package Updater Module](https://github.com/majkinetor/au): `Install-Module au` or `cinst au`
+- Powershell 5+.
+- [Chocolatey Automatic Package Updater Module](https://github.com/majkinetor/au): `Install-Module au` or `cinst au`.
+
+In order to setup AppVeyor update runner please take a look at the AU wiki [AppVeyor section](https://github.com/majkinetor/au/wiki/AppVeyor).
 
 ## Create a package
 
@@ -37,6 +39,7 @@ To update all packages run `./update_all.ps1`. It accepts few options:
 ./update_all.ps1 -Name a*                         # Update all packages which name start with letter 'a'
 ./update_all.ps1 -ForcedPackages 'cpu-z copyq'    # Update all packages and force cpu-z and copyq
 ./update_all.ps1 -ForcedPackages 'copyq:1.2.3'    # Update all packages but force copyq with explicit version
+./update_all.ps1 -ForcedPackages 'libreoffice-streams\fresh:6.1.0]'    # Update all packages but force libreoffice-streams package to update stream `fresh` with explicit version `6.1.0`.
 ./update_all.ps1 -Root 'c:\packages'              # Update all packages in the c:\packages folder
 ```
 
@@ -50,6 +53,20 @@ $au_Push      = $false       #Do not push to chocolatey
 You can also call AU method `Update-AUPackages` (alias `updateall`) on its own in the repository root. This will just run the updater for the each package without any other option from `update_all.ps1` script. For example to force update of all packages with a single command execute:
 
     updateall -Options ([ordered]@{ Force = $true })
+
+## Testing all packages
+
+You can force the update of all or subset of packages to see how they behave when complete update procedure is done:
+
+
+```powershell
+./test_all.ps1                            # Test force update on all packages
+./test_all.ps1 'cdrtfe','freecad', 'p*'   # Test force update on only given packages
+./test_all.ps1 'random 3'                 # Split packages in 3 groups and randomly select and test 1 of those each time
+```
+
+
+**Note**: If you run this locally your packages will get updated. Use `git reset --hard` after running this to revert the changes.
 
 ## Pushing To Community Repository Via Commit Message
 
@@ -84,3 +101,4 @@ To use this system with your own packages do the following steps:
 Add your own packages now, with this in mind:
 * You can keep both manual and automatic packages together. To get only AU packages any time use `Get-AUPackages` function (alias `lsau` or `gau`)
 * Keep all package additional files in the package directory (icons, screenshots etc.). This keeps everything related to one package in its own directory so it is easy to move it around or remove it.
+
