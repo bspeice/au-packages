@@ -2,10 +2,10 @@
 $ErrorActionPreference = 'Stop';
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32      = 'http://dlcf.reaper.fm/6.x/reaper615-install.exe'
-$checksum32 = '6293ddf14382b3a54d1080037804b4288a61812bb5989038f2e07620e06af4cd'
-$url64      = 'http://dlcf.reaper.fm/6.x/reaper615_x64-install.exe'
-$checksum64 = 'edfa61d39905b047e7853017f293271f5ed84eabd717da9833588774ebd7dd29'
+$url32      = 'https://dlcf.reaper.fm/6.x/reaper616-install.exe'
+$checksum32 = '2cd5f26c633527f14ff5fa6491e2aa9b22219d060a7434a552d4f4bb64fcc60f'
+$url64      = 'https://dlcf.reaper.fm/6.x/reaper616_x64-install.exe'
+$checksum64 = 'ab9908c8480991214761982302bc4fa3c67452367fbe5de6a83b633baa2636fa'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
