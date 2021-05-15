@@ -2,8 +2,8 @@
 $ErrorActionPreference = 'Stop';
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://bintray.com/sonic-visualiser/sonic-visualiser/download_file?file_path=sonic-visualiser-4.3-win32.msi'
-$url64      = 'https://bintray.com/sonic-visualiser/sonic-visualiser/download_file?file_path=sonic-visualiser-4.3-win64.msi'
+$url        = 'https://code.soundsoftware.ac.uk/attachments/download/2790/sonic-visualiser-4.3-win32.msi'
+$url64      = 'https://code.soundsoftware.ac.uk/attachments/download/2789/sonic-visualiser-4.3-win64.msi'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
