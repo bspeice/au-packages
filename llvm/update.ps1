@@ -20,9 +20,9 @@ function global:au_GetLatest {
     $url32 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-' + $version + '/LLVM-' + $version + '-win32.exe'
     $url64 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-' + $version + '/LLVM-' + $version + '-win64.exe'
 
-    Write-Host $version
-    Write-Host $url32
-    Write-Host $url64
+    # Write-Host $version
+    # Write-Host $url32
+    # Write-Host $url64
 
     return @{ URL64 = $url64; URL32 = $url32; Version = $version }
 }
