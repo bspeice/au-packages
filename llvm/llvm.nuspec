@@ -3,7 +3,7 @@
   <metadata>
     <id>llvm</id>
     <title>LLVM</title>
-    <version>12.0.0</version>
+    <version>12.0.1</version>
     <authors>LLVM team</authors>
     <owners>Bradlee Speice</owners>
     <summary>LLVM Compiler Infrastructure</summary>
@@ -18,6 +18,7 @@ This package installs all Windows tools, which includes but is not limited to:
 - lld
 - llvm-objdump
 ]]></description>
+    <releaseNotes>https://llvm.org/docs/ReleaseNotes.html</releaseNotes>
     <packageSourceUrl>https://github.com/bspeice/au-packages</packageSourceUrl>
     <projectUrl>http://llvm.org/</projectUrl>
     <docsUrl>https://llvm.org/docs/</docsUrl>
