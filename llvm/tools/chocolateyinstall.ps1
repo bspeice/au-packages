@@ -31,8 +31,10 @@ $packageArgs = @{
 Install-ChocolateyPackage @packageArgs
 
 # Check if Visual Studio is installed
-(Get-CimInstance MSFT_VSInstance) | out-null
-if (!($?)) {
+try {
+  (Get-CimInstance MSFT_VSInstance) | out-null
+}
+catch {
   Write-Host "NOTE: Visual Studio not detected. LLVM does not provide a C/C++ standard library and may be unable to locate MSVC headers."
 }
 
