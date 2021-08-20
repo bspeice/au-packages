@@ -1,30 +1,30 @@
 ﻿
 $ErrorActionPreference = 'Stop';
 
-$packageName= $env:ChocolateyPackageName
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32      = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-12.0.1/LLVM-12.0.1-win32.exe'
+$packageName = $env:ChocolateyPackageName
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$url32 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-12.0.1/LLVM-12.0.1-win32.exe'
 $checksum32 = '62f8bc1328a8d9e3fcd4663139891aaeda2ea4fe83eb510cba1c9ca943c76d51'
-$url64      = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-12.0.1/LLVM-12.0.1-win64.exe'
+$url64 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-12.0.1/LLVM-12.0.1-win64.exe'
 $checksum64 = 'fcbabc9a170208bb344f7bba8366cca57ff103d72a316781bbb77d634b9e9433'
 
 $packageArgs = @{
-  packageName   = $packageName
-  unzipLocation = $toolsDir
-  fileType      = 'EXE'
-  url           = $url32
-  url64bit      = $url64
+  packageName    = $packageName
+  unzipLocation  = $toolsDir
+  fileType       = 'EXE'
+  url            = $url32
+  url64bit       = $url64
 
-  softwareName  = 'llvm*'
+  softwareName   = 'llvm*'
 
-  checksum      = $checksum32
-  checksumType  = 'sha256'
-  checksum64    = $checksum64
-  checksumType64= 'sha256'
+  checksum       = $checksum32
+  checksumType   = 'sha256'
+  checksum64     = $checksum64
+  checksumType64 = 'sha256'
 
 
-  silentArgs   = '/S'
-  validExitCodes= @(0)
+  silentArgs     = '/S'
+  validExitCodes = @(0)
 }
 
 

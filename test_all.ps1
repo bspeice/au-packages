@@ -22,7 +22,7 @@ if (($Name.Length -gt 0) -and ($Name[0] -match '^random (.+)')) {
 $options = [ordered]@{
     Force   = $true
     Push    = $false
-    Threads = 10 
+    Threads = 10
 
     IgnoreOn = @(                                      #Error message parts to set the package ignore status
         'Could not create SSL/TLS secure channel'
