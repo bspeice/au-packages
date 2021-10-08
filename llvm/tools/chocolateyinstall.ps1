@@ -31,6 +31,9 @@ $packageArgs = @{
 Install-ChocolateyPackage @packageArgs
 
 # Check if Visual Studio is installed
+# While there have been some reports of this not working well for some users, it is a method recommended by MSFT:
+# https://docs.microsoft.com/en-us/visualstudio/install/tools-for-managing-visual-studio-instances?view=vs-2019#using-windows-management-instrumentation-wmi
+# I'm open to other suggestions for detection, but can confirm that this works for both regular and admin shells for me.
 try {
   (Get-CimInstance MSFT_VSInstance) | out-null
 }
