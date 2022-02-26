@@ -2,7 +2,7 @@
 $ErrorActionPreference = 'Stop';
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = 'https://sourceforge.net/projects/tuxguitar/files/TuxGuitar/TuxGuitar-1.5.4/tuxguitar-1.5.4-windows-x86-installer.exe/download'
+$url = 'https://sourceforge.net/projects/tuxguitar/files/TuxGuitar/TuxGuitar-1.5.5/tuxguitar-1.5.5-windows-x86-installer.exe/download'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
@@ -12,7 +12,7 @@ $packageArgs = @{
 
   softwareName   = 'tuxguitar*'
 
-  checksum       = 'bf893887619639c64dff105a2f3edd639329af997db27151806a1a103e09d1fe'
+  checksum       = '8158e1009b54f5718270d99e21219a441b9b9c1245d2669759ccdeab0211244a'
   checksumType   = 'sha256'
 
   silentArgs     = '--mode unattended --unattendedmodeui none'
