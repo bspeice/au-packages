@@ -3,7 +3,7 @@
   <metadata>
     <id>llvm</id>
     <title>LLVM</title>
-    <version>15.0.1</version>
+    <version>15.0.2</version>
     <authors>LLVM team</authors>
     <owners>Bradlee Speice</owners>
     <summary>LLVM Compiler Infrastructure</summary>
