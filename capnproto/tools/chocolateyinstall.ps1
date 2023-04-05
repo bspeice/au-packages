@@ -3,8 +3,8 @@ $ErrorActionPreference = 'Stop';
 
 $packageName = $env:ChocolateyPackageName
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32 = 'https://capnproto.org/capnproto-c++-win32-0.10.2.zip'
-$checksum32 = '8cb9da6672b90c868d6bbbab726d05ec417a46f978d575b356cefe4c0f5c5813'
+$url32 = 'https://capnproto.org/capnproto-c++-win32-0.10.3.zip'
+$checksum32 = '4c28e8230cf8b879b3925d22cd13256407ca1d960796b95b714a4e7bfe7e8a57'
 
 $packageArgs = @{
   packageName   = $packageName
