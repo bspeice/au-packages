@@ -3,7 +3,7 @@
   <metadata>
     <id>capnproto</id>
     <title>Cap'n Proto</title>
-    <version>0.10.3</version>
+    <version>0.10.4</version>
     <authors>Sandstorm.io</authors>
     <owners>Kenton Varda</owners>
     <summary>Cap'n Proto compiler</summary>
