@@ -30,8 +30,17 @@ function global:au_GetLatest {
   }
 
   if ($version_major -And $version_minor) {
-    $version = $version_major + '.' + $version_minor
-    # $version = Get-Version $version
+    if ($version_minor.length -eq 2) {
+      $version_2_digits = $version_minor
+      $version_minor = $version_2_digits.substring(0, 1)
+      $version_patch = $version_2_digits.substring(1, 1)
+    }
+    if ($version_minor -eq '0') {
+      # Workaround for shipped version 7.X where X = patch version
+      $version_minor = '8'
+    }
+    $version = $version_major + '.' + $version_minor + '.' + $version_patch
+    $version = Get-Version $version
   }
 
   if ($version_compact -And $version_major) {
