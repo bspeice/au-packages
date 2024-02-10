@@ -35,8 +35,12 @@ function global:au_GetLatest {
       $version_minor = $version_2_digits.substring(0, 1)
       $version_patch = $version_2_digits.substring(1, 1)
     }
+    # Workarounds for shipped version 7.X where X = patch version
     if ($version_minor -eq '0') {
-      # Workaround for shipped version 7.X where X = patch version
+      $version_minor = '8'
+    }
+     if ($version_minor -eq '1') {
+      $version_patch = $version_minor + $version_patch
       $version_minor = '8'
     }
     $version = $version_major + '.' + $version_minor + '.' + $version_patch
