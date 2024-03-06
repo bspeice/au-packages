@@ -22,8 +22,8 @@ This package installs all Windows tools, which includes but is not limited to:
     <packageSourceUrl>https://github.com/bspeice/au-packages</packageSourceUrl>
     <projectUrl>http://llvm.org/</projectUrl>
     <docsUrl>https://llvm.org/docs/</docsUrl>
-    <mailingListUrl>https://lists.llvm.org/mailman/listinfo/llvm-dev</mailingListUrl>
-    <bugTrackerUrl>https://bugs.llvm.org/</bugTrackerUrl>
+    <mailingListUrl>https://discourse.llvm.org/</mailingListUrl>
+    <bugTrackerUrl>https://github.com/llvm/llvm-project/issues</bugTrackerUrl>
     <projectSourceUrl>https://github.com/llvm/llvm-project</projectSourceUrl>
     <tags>llvm c++ c clang clangd lld</tags>
     <licenseUrl>http://llvm.org/docs/DeveloperPolicy.html#license</licenseUrl>
