@@ -3,21 +3,24 @@ import-module au
 function global:au_SearchReplace {
   @{
     "tools\chocolateyInstall.ps1" = @{
-      "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-      "(^\s*checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+      "(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
+      "(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
     }
   }
 }
 
 function global:au_GetLatest {
-  $releases = 'https://sourceforge.net/projects/tuxguitar/files/TuxGuitar/'
-  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-  $regex = 'TuxGuitar-.*'
-  $version = (($download_page.Links | ? href -match $regex | Select-Object -First 1 -expand href) -split '-' | Select-Object -Skip 1).Trim('/')
-  if ($version) {
-    $url = 'https://sourceforge.net/projects/tuxguitar/files/TuxGuitar/TuxGuitar-' + $version + '/tuxguitar-' + $version + '-windows-x86-installer.exe/download'
-  }
-  return @{ Version = $version; URL32 = $url }
+  $latest_release_endpoint = 'https://api.github.com/repos/helge17/tuxguitar/releases/latest'
+  $latest_release = Invoke-RestMethod $latest_release_endpoint -UseBasicParsing
+  $name = $latest_release.name
+  $version = $name -split ' ' | select -Last 1
+
+  $url64 = 'https://github.com/helge17/tuxguitar/releases/download/' + $version + '/tuxguitar-' + $version + '-windows-swt-x86_64-installer.exe'
+
+  Write-Host $version
+  Write-Host $url64
+
+  return @{ Version = $version; URL64 = $url64 }
 }
 
-Update-Package
+Update-Package -ChecksumFor 64

@@ -2,18 +2,18 @@
 $ErrorActionPreference = 'Stop';
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = 'https://sourceforge.net/projects/tuxguitar/files/TuxGuitar/TuxGuitar-1.5.6/tuxguitar-1.5.6-windows-x86-installer.exe/download'
+$url64 = 'https://github.com/helge17/tuxguitar/releases/download/1.6.3/tuxguitar-1.6.3-windows-swt-x86_64-installer.exe'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $toolsDir
   fileType       = 'EXE'
-  url            = $url
+  url64bit       = $url64
 
   softwareName   = 'tuxguitar*'
 
-  checksum       = '42d7312406948c9c6f6002a5597e9e5fceb3920a6cc8e540231dc42b543116d1'
-  checksumType   = 'sha256'
+  checksum64       = 'a62e1b045fa6b2b6b931b2d718a6b2b874f4b679aeef214b04d6bcebc5938575'
+  checksumType64   = 'sha256'
 
   silentArgs     = '--mode unattended --unattendedmodeui none'
   validExitCodes = @(0)

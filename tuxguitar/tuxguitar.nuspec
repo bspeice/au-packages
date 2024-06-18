@@ -2,19 +2,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>tuxguitar</id>
-    <version>1.5.6</version>
+    <version>1.6.3</version>
     <packageSourceUrl>https://github.com/bspeice/au-packages</packageSourceUrl>
     <owners>nipsky, Jerome Benoit</owners>
     <title>TuxGuitar</title>
     <authors>Julian Gabriel Casadesus</authors>
-    <projectUrl>http://www.tuxguitar.com.ar/</projectUrl>
+    <projectUrl>https://www.tuxguitar.app/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/bspeice/au-packages/master/tuxguitar/icons/tuxguitar.png</iconUrl>
-    <licenseUrl>http://www.tuxguitar.com.ar/license.html</licenseUrl>
+    <licenseUrl>https://www.tuxguitar.app/#license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://sourceforge.net/p/tuxguitar/code/</projectSourceUrl>
-    <docsUrl>http://www.tuxguitar.com.ar/documentation.html</docsUrl>
-    <mailingListUrl>http://www.tuxguitar.com.ar/forums.html</mailingListUrl>
-    <bugTrackerUrl>https://sourceforge.net/p/tuxguitar/bugs/</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/helge17/tuxguitar</projectSourceUrl>
+    <docsUrl>https://www.tuxguitar.app/#help</docsUrl>
+    <bugTrackerUrl>https://github.com/helge17/tuxguitar/issues</bugTrackerUrl>
     <tags>tuxguitar music guitar audio midi partition tablature multitrack</tags>
     <summary>TuxGuitar multitrack tablature editor</summary>
     <description><![CDATA[TuxGuitar is a free, open source multitrack tablature editor. With TuxGuitar, you will be able to compose music using the following features:
@@ -31,7 +30,7 @@
 * Tempo management
 * Imports and exports gp3, gp4 and gp5 files
 ]]></description>
-    <releaseNotes>https://sourceforge.net/p/tuxguitar/news/</releaseNotes>
+    <releaseNotes>https://github.com/helge17/tuxguitar/blob/master/CHANGES</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
