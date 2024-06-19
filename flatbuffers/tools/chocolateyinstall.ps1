@@ -3,13 +3,13 @@ $ErrorActionPreference = 'Stop';
 
 $packageName = $env:ChocolateyPackageName
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32 = 'https://github.com/google/flatbuffers/releases/download/v1.12.0/flatc_windows.zip'
-$checksum32 = '08588515fbd1acca672faac27e4a670e3359b4497a6a87608d96031b7652d470'
+$url32 = 'https://github.com/google/flatbuffers/releases/download/v24.3.25/Windows.flatc.binary.zip'
+$checksum32 = '6455f5b6272b908dad073721e21b11720a9fddbae06e28b5c75f8ec458e7fe30'
 
 $packageArgs = @{
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  fileType       = 'EXE'
+  fileType       = 'ZIP'
   url            = $url32
 
   softwareName   = 'Flatbuffers*'

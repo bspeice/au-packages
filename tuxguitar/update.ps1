@@ -13,7 +13,7 @@ function global:au_GetLatest {
   $latest_release_endpoint = 'https://api.github.com/repos/helge17/tuxguitar/releases/latest'
   $latest_release = Invoke-RestMethod $latest_release_endpoint -UseBasicParsing
   $name = $latest_release.name
-  $version = $name -split ' ' | select -Last 1
+  $version = $name -split ' ' | Select-Object -Last 1
 
   $url64 = 'https://github.com/helge17/tuxguitar/releases/download/' + $version + '/tuxguitar-' + $version + '-windows-swt-x86_64-installer.exe'
 

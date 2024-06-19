@@ -13,9 +13,9 @@ function global:au_GetLatest {
   $latest_release_endpoint = 'https://api.github.com/repos/google/flatbuffers/releases/latest'
   $latest_release = Invoke-RestMethod $latest_release_endpoint -UseBasicParsing
   $name = $latest_release.name
-  $version = $name -split ' ' | select -Last 1
+  $version = $name -split 'v' | Select-Object -Last 1
 
-  $url32 = 'https://github.com/google/flatbuffers/releases/download/v' + $version + '/flatc_windows.zip'
+  $url32 = 'https://github.com/google/flatbuffers/releases/download/v' + $version + '/Windows.flatc.binary.zip'
 
   Write-Host $version
   Write-Host $url32

@@ -2,9 +2,9 @@ $ErrorActionPreference = 'Stop';
 
 $packageName = $env:ChocolateyPackageName
 $softwareName = 'Flatbuffers*'
-$installerType = 'EXE'
+$installerType = 'ZIP'
 
-$silentArgs = '/S'
+# $silentArgs = '/S'
 $validExitCodes = @(0)
 
 $uninstalled = $false
@@ -22,7 +22,7 @@ if ($key.Count -eq 1) {
 
     Uninstall-ChocolateyPackage -PackageName $packageName `
       -FileType $installerType `
-      -SilentArgs "$silentArgs" `
+      # -SilentArgs "$silentArgs" `
       -ValidExitCodes $validExitCodes `
       -File "$file"
   }
