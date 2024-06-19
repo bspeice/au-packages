@@ -5,7 +5,7 @@
     <title>FlatBuffers</title>
     <version>24.3.25</version>
     <authors>Google</authors>
-    <owners>Bradlee Speice, Jerome Benoit</owners>
+    <owners>Jerome Benoit</owners>
     <summary>FlatBuffers is a cross platform serialization library architected for maximum memory efficiency. It allows you to directly access serialized data without parsing/unpacking it first, while still having great forwards/backwards compatibility.</summary>
     <description><![CDATA[FlatBuffers is a cross platform serialization library architected for maximum memory efficiency. It allows you to directly access serialized data without parsing/unpacking it first, while still having great forwards/backwards compatibility.
 ]]></description>
