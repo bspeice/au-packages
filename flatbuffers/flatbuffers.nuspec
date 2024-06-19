@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>flatbuffers</id>
+    <id>flatc</id>
     <title>FlatBuffers</title>
     <version>24.3.25</version>
     <authors>Google</authors>
