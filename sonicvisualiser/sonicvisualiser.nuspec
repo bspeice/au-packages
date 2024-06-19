@@ -9,12 +9,10 @@
     <authors>Centre for Digital Music at Queen Mary - University of London</authors>
     <projectUrl>https://www.sonicvisualiser.org/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/bspeice/au-packages/master/sonicvisualiser/icons/sv-128x128.png</iconUrl>
-    <!--<copyright>Year Software Vendor</copyright>-->
     <licenseUrl>https://code.soundsoftware.ac.uk/projects/sonic-visualiser/repository/entry/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://code.soundsoftware.ac.uk/projects/sonic-visualiser/repository</projectSourceUrl>
     <docsUrl>https://www.sonicvisualiser.org/documentation.html</docsUrl>
-    <!--<mailingListUrl></mailingListUrl>-->
     <bugTrackerUrl>https://code.soundsoftware.ac.uk/projects/sonic-visualiser/issues</bugTrackerUrl>
     <tags>sonicvisualiser audio visualisation analysis annotation</tags>
     <summary>Sonic Visualiser: visualisation, analysis, and annotation of music audio recordings</summary>

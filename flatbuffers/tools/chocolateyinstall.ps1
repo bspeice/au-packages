@@ -15,8 +15,8 @@ $packageArgs = @{
 
   softwareName   = $softwareName
 
-  checksum32     = $checksum32
-  checksumType32 = 'sha256'
+  checksum       = $checksum32
+  checksumType   = 'sha256'
 }
 
 Install-ChocolateyZipPackage @packageArgs
