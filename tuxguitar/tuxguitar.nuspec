@@ -8,7 +8,7 @@
     <title>TuxGuitar</title>
     <authors>Julian Gabriel Casadesus</authors>
     <projectUrl>https://www.tuxguitar.app/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/bspeice/au-packages/master/tuxguitar/icons/tuxguitar.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/bspeice/au-packages/96035613c5d5e1a85b66422855ff7be7bb45bcbc/tuxguitar/icons/tuxguitar.png</iconUrl>
     <licenseUrl>https://www.tuxguitar.app/#license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/helge17/tuxguitar</projectSourceUrl>
