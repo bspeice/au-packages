@@ -39,7 +39,7 @@ function global:au_GetLatest {
     if ($version_minor -eq '0') {
       $version_minor = '8'
     }
-     if ($version_minor -eq '1') {
+    if ($version_minor -eq '1' -or $version_minor -eq '2') {
       $version_patch = $version_minor + $version_patch
       $version_minor = '8'
     }
