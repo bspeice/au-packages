@@ -1,21 +1,23 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$packageName = $env:ChocolateyPackageName
+$packageName = 'llvm.portable'
 $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 
-$url64 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.0/LLVM-19.1.0-Windows-X64.tar.xz'
-$checksum64 = ''
-
+# Decompresses .tar.xz into .tar archive
 $packageArgs = @{
   PackageName    = $packageName
-  FileFullPath64 = Get-Item $toolsPath\*-Windows-X64.tar.xz
-  Destination    = "$(Get-ToolsLocation)\llvm"
-
-  url64bit       = $url64
-  checksum64     = $checksum64
-  checksumType64 = 'sha256'
+  FileFullPath64 = Get-Item $toolsPath\*-X64.tar.xz
+  Destination    = $toolsPath
 }
 Get-ChocolateyUnzip @packageArgs
-Install-ChocolateyPath "$($packageArgs.Destination)\bin"
 
-Get-ChildItem $toolsPath\*.exe | ForEach-Object { Remove-Item $_ -ea 0; if (Test-Path $_) { Set-Content "$_.ignore" '' } }
+if (Test-Path "$toolsPath\LLVM*.tar") {
+  # Untars the archive into the folders we care about
+  $packageArgs = @{
+    PackageName    = $packageName
+    FileFullPath64 = Get-Item $toolsPath\*-X64.tar
+    Destination    = $toolsPath
+  }
+  Get-ChocolateyUnzip @packageArgs
+  Remove-Item "$toolsPath\LLVM*.tar"
+}

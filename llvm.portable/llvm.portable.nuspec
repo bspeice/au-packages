@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>llvm</id>
+    <id>llvm.portable</id>
     <title>LLVM</title>
-    <version>19.0.0</version>
+    <version>19.1.0</version>
     <authors>LLVM team</authors>
     <owners>Bradlee Speice</owners>
     <summary>LLVM Compiler Infrastructure</summary>
