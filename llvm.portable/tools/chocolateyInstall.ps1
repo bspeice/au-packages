@@ -3,8 +3,8 @@
 $packageName = 'llvm.portable'
 $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 
-$url64 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.2/LLVM-19.1.2-Windows-X64.tar.xz'
-$checksum64 = '3aa49c72622c14caabb63f80cc156ce1d6806e12af554754ae1084bd7bc8f6ba'
+$url64 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.3/LLVM-19.1.3-Windows-X64.tar.xz'
+$checksum64 = '1077267ca353a1e236055ed4b57d6a404d09c40b01bd27dc882870395cdc1aae'
 
 # Fetch and decompresses .tar.xz into .tar archive
 $packageArgs = @{
