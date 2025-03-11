@@ -3,10 +3,10 @@ $ErrorActionPreference = 'Stop';
 
 $packageName = $env:ChocolateyPackageName
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.5/LLVM-19.1.5-win32.exe'
-$checksum32 = '5db99b33285848d65f6b095f950a64293c261c80ffc28d69b7e6710d0839e69e'
-$url64 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.5/LLVM-19.1.5-win64.exe'
-$checksum64 = '9b29856202d82047b504a9e501d66080bed0eaff3f1127191f4f361e0e00c770'
+$url32 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.0/LLVM-20.1.0-win32.exe'
+$checksum32 = 'bb13ac6af1bd30849b7f4fcea9c5aaf93e43e86399360c8a3e7488379d01f2ea'
+$url64 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.0/LLVM-20.1.0-win64.exe'
+$checksum64 = '64b9ee39d07c1adca999a132b7367fbeaa649f4e829e07d8e8766626235a1aa7'
 
 $packageArgs = @{
   packageName    = $packageName

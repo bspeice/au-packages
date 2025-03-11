@@ -26,3 +26,11 @@ if (Test-Path "$toolsPath\LLVM*.tar") {
   Get-ChocolateyUnzip @packageArgs
   Remove-Item "$toolsPath\LLVM*.tar"
 }
+
+# Validator takes too long to install shims, so disable all generation
+# and add to PATH instead
+Get-ChildItem "$toolsPath\bin" -Filter *.exe | Foreach-Object {
+  $exeName = $_.FullName
+  echo $null >> "$exeName.ignore"
+}
+Install-ChocolateyPath "$toolsPath\bin" "User"
