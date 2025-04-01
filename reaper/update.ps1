@@ -1,6 +1,4 @@
-import-module au
-
-$releases = 'http://reaper.fm/download.php'
+import-module Chocolatey-AU
 
 function global:au_SearchReplace {
   @{
@@ -14,49 +12,38 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  # First, find the Reaper version
+  $download_page = Invoke-WebRequest -Uri "http://reaper.fm/download.php"
 
-  $regex = "reaper.*-install.exe"
-  $installer_exe = $download_page.Links | ? href -match $regex | Select-Object -First 1 -expand href
-  if ($installer_exe) {
-    $version_compact = $installer_exe -split 'reaper|_' | Select-Object -Last 1 -Skip 1
-  }
-  # Write-Host $version_compact
-  if ($installer_exe) {
-    $version_major = $installer_exe -split '/|\.' | Select-Object -First 1 -Skip 1
-  }
-  if ($version_compact -And $version_major) {
-    $version_minor = $version_compact -split $version_major, 2 -join ''
-  }
+  $version_regex = ".*Version (.*): .*"
+  $version_matchinfo = $download_page.Links | ? outerHTML -match $version_regex  | Select-Object -First 1 -expand outerHTML | Select-String -Pattern $version_regex
+  $version_text = $version_matchinfo.Matches.Groups[1].Value
 
-  if ($version_major -And $version_minor) {
-    if ($version_minor.length -eq 2) {
-      $version_2_digits = $version_minor
-      $version_minor = $version_2_digits.substring(0, 1)
-      $version_patch = $version_2_digits.substring(1, 1)
-    }
-    # Workarounds for shipped version 7.X where X = patch version
-    if ($version_minor -eq '0') {
-      $version_minor = '8'
-    }
-    if ($version_minor -eq '1' -or $version_minor -eq '2') {
-      $version_patch = $version_minor + $version_patch
-      $version_minor = '8'
-    }
-    $version = $version_major + '.' + $version_minor + '.' + $version_patch
-    $version = Get-Version $version
+  $version_major = $version_text -split '\.' | Select-Object -First 1
+  $version_minor = $version_text -split '\.' | Select-Object -First 1 -Skip 1
+  $version_patch = $version_text -split '\.' | Select-Object -First 1 -Skip 2
+
+  if ($null -eq $version_patch) {
+    $version_patch = "0"
   }
 
-  if ($version_compact -And $version_major) {
-    $url32 = 'https://dlcf.reaper.fm/' + $version_major + '.x/reaper' + $version_compact + '-install.exe'
-    $url64 = 'https://dlcf.reaper.fm/' + $version_major + '.x/reaper' + $version_compact + '_x64-install.exe'
-  }
+  $version = "${version_major}.${version_minor}.${version_patch}"
+  Write-Host "Found Reaper: text=${version_text} chocolatey=${version}"
 
-  # Write-Host $version
-  # Write-Host $url32
-  # Write-Host $url64
+  # Get the actual download URL
+  $download_base = "https://reaper.fm/"
 
-  return @{ URL64 = $url64; URL32 = $url32; Version = $version }
+  $installer_32_regex = "reaper.*[^_64]-install.exe"
+  $installer_32_exe = $download_page.Links | ? href -match $installer_32_regex | Select-Object -First 1 -expand href
+  $installer_32_url = "${download_base}${installer_32_exe}"
+  Write-Host "Found 32-bit installer: ${installer_32_url}"
+
+  $installer_64_regex = "reaper.*_x64-install.exe"
+  $installer_64_exe = $download_page.Links | ? href -match $installer_64_regex | Select-Object -First 1 -expand href
+  $installer_64_url = "${download_base}${installer_64_exe}"
+  Write-Host "Found 64-bit installer: ${installer_64_url}"
+
+  return @{ URL64 = $installer_64_url; URL32 = $installer_32_url; Version = $version }
 }
 
 Update-Package
