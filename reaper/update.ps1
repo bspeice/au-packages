@@ -33,13 +33,19 @@ function global:au_GetLatest {
   # Get the actual download URL
   $download_base = "https://reaper.fm/"
 
-  $installer_32_regex = "reaper.*[^_64]-install.exe"
-  $installer_32_exe = $download_page.Links | ? href -match $installer_32_regex | Select-Object -First 1 -expand href
+  # Find 32-bit installer by looking for "Windows 32-bit" in the title
+  $installer_32_link = $download_page.Links | 
+  Where-Object { $_.title -match "Windows 32-bit" } | 
+  Select-Object -First 1
+  $installer_32_exe = $installer_32_link.href
   $installer_32_url = "${download_base}${installer_32_exe}"
   Write-Host "Found 32-bit installer: ${installer_32_url}"
-
-  $installer_64_regex = "reaper.*_x64-install.exe"
-  $installer_64_exe = $download_page.Links | ? href -match $installer_64_regex | Select-Object -First 1 -expand href
+  
+  # Find 64-bit installer by looking for "Windows 64-bit" in the title
+  $installer_64_link = $download_page.Links | 
+  Where-Object { $_.title -match "Windows 64-bit" } | 
+  Select-Object -First 1
+  $installer_64_exe = $installer_64_link.href
   $installer_64_url = "${download_base}${installer_64_exe}"
   Write-Host "Found 64-bit installer: ${installer_64_url}"
 
