@@ -13,7 +13,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
   # First, find the Reaper version
-  $download_page = Invoke-WebRequest -Uri "http://reaper.fm/download.php"
+  $download_page = Invoke-WebRequest -Uri "http://reaper.fm/download.php" -UseBasicParsing
 
   $version_regex = ".*Version (.*): .*"
   $version_matchinfo = $download_page.Links | ? outerHTML -match $version_regex  | Select-Object -First 1 -expand outerHTML | Select-String -Pattern $version_regex
