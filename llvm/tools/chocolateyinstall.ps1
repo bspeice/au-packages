@@ -3,8 +3,8 @@ $ErrorActionPreference = 'Stop';
 
 $packageName = $env:ChocolateyPackageName
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-22.1.0/LLVM-22.1.0-win64.exe'
-$checksum64 = 'b31d5f54942e017cb878e594529723dd629cc7b54c9bf7a331e2dc01e8ea5e75'
+$url64 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-22.1.7/LLVM-22.1.7-win64.exe'
+$checksum64 = 'e091fcf965ce589c83c0f7c5356b2fcf3e658a8ec990bfcf79cce4389a0d1eb3'
 
 $packageArgs = @{
   packageName    = $packageName
