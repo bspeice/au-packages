@@ -15,7 +15,7 @@ function global:au_GetLatest {
   $name = $latest_release.name
   $version = $name -split 'LLVM ' | Select-Object -Last 1
 
-  $url64 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-' + $version + '/LLVM-' + $version + '-win64.exe'
+  $url64 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-' + $version + '/LLVM-' + $version + '-win64.msi'
 
   Write-Host $version
   Write-Host $url64

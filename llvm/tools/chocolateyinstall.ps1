@@ -3,13 +3,13 @@ $ErrorActionPreference = 'Stop';
 
 $packageName = $env:ChocolateyPackageName
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-22.1.8/LLVM-22.1.8-win64.exe'
-$checksum64 = '16e5709785fef73c854646241c4a92c5cd574318d1b33c63330dd7721903e55c'
+$url64 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-23.1.3/LLVM-23.1.3-win64.msi'
+$checksum64 = '5153f848ac87553118340f16f8d3cd4351d729bcba6e4785c6a4a9af29676de9'
 
 $packageArgs = @{
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  fileType       = 'EXE'
+  fileType       = 'MSI'
   url64bit       = $url64
 
   softwareName   = 'llvm*'
@@ -18,8 +18,8 @@ $packageArgs = @{
   checksumType64 = 'sha256'
 
 
-  silentArgs     = '/S'
-  validExitCodes = @(0)
+  silentArgs     = '/qn /norestart'
+  validExitCodes = @(0, 1641, 3010)
 }
 
 

@@ -2,10 +2,10 @@ $ErrorActionPreference = 'Stop';
 
 $packageName = $env:ChocolateyPackageName
 $softwareName = 'llvm*'
-$installerType = 'EXE'
+$installerType = 'MSI'
 
-$silentArgs = '/S'
-$validExitCodes = @(0)
+$silentArgs = '/qn /norestart'
+$validExitCodes = @(0, 1605, 1614, 1641, 3010)
 
 $uninstalled = $false
 [array]$key = Get-UninstallRegistryKey -SoftwareName $softwareName
